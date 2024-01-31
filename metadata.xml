@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="windows-1252"?>
+<lom xmlns="http://www.imsglobal.org/xsd/imsmd_rootv1p2p1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.imsglobal.org/xsd/imsmd_rootv1p2p1 imsmd_rootv1p2p1.xsd">
+  <general>
+    <title>
+    <langstring xml:lang="pt-BR">Simulador | Vivo Smart Wi-Fi</langstring>
+    </title>
+    <catalogentry>
+      <catalog />
+      <entry>
+        <langstring xml:lang="pt-BR" />
+      </entry>
+    </catalogentry>
+    <language>pt-BR</language>
+    <description>
+      <langstring xml:lang="pt-BR" />
+    </description>
+    <aggregationlevel>
+      <source>
+        <langstring xml:lang="x-none">LOMv1.0</langstring>
+      </source>
+      <value>
+        <langstring xml:lang="x-none">3</langstring>
+      </value>
+    </aggregationlevel>
+  </general>
+  <lifecycle>
+    <version>
+      <langstring xml:lang="x-none" />
+    </version>
+    <status>
+      <source>
+        <langstring xml:lang="x-none">LOMv1.0</langstring>
+      </source>
+      <value>
+        <langstring xml:lang="x-none" />
+      </value>
+    </status>
+    <contribute>
+      <role>
+        <source>
+          <langstring xml:lang="x-none">LOMv1.0</langstring>
+        </source>
+        <value>
+          <langstring xml:lang="x-none">Author</langstring>
+        </value>
+      </role>
+      <centity>
+        <vcard>BEGIN:vCard ORG: END:vCard</vcard>
+      </centity>
+      <date>
+        <datetime>2011-08-02</datetime>
+      </date>
+    </contribute>
+  </lifecycle>
+  <metametadata>
+    <metadatascheme>ADL SCORM 1.2</metadatascheme>
+    <language>pt-BR</language>
+  </metametadata>
+  <technical>
+    <format>text/html</format>
+    <location type="URI">.</location>
+  </technical>
+  <educational>
+    <learningresourcetype>
+      <source>
+        <langstring xml:lang="x-none">LOMv1.0</langstring>
+      </source>
+      <value>
+        <langstring xml:lang="x-none" />
+      </value>
+    </learningresourcetype>
+  </educational>
+  <rights>
+    <cost>
+      <source>
+        <langstring xml:lang="x-none">LOMv1.0</langstring>
+      </source>
+      <value>
+        <langstring xml:lang="x-none" />
+      </value>
+    </cost>
+    <copyrightandotherrestrictions>
+      <source>
+        <langstring xml:lang="x-none">LOMv1.0</langstring>
+      </source>
+      <value>
+        <langstring xml:lang="x-none" />
+      </value>
+    </copyrightandotherrestrictions>
+    <description>
+      <langstring xml:lang="pt-BR" />
+    </description>
+  </rights>
+  <classification>
+    <purpose>
+      <source>
+        <langstring xml:lang="x-none">LOMv1.0</langstring>
+      </source>
+      <value>
+        <langstring xml:lang="x-none" />
+      </value>
+    </purpose>
+    <description>
+      <langstring xml:lang="pt-BR" />
+    </description>
+  </classification>
+</lom>

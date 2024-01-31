@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title aria-hidden="true">Simulador | Vivo Smart Wi-Fi</title>
+
+    <!-- CSS Padrões -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/geral.css">
+</head>
+
+<body>
+    <div id="preload"></div>
+    <div id="container" sandbox="allow-same-origin allow-scripts">
+
+        <!-- hud -->
+        <div class="hud">
+            <a href="javascript:void(0);" onclick="screen.back();">
+                <div alt="Voltar tela" class="divImg btn-back nav disabled"></div>
+            </a>
+
+            <a href="javascript:void(0);" onclick="screen.next();">
+                <div alt="Avançar tela" class="divImg btn-next nav disabled"></div>
+            </a>
+        </div>
+
+        <!-- telas -->
+        <div id="loaded_content">
+            <div id="preload-content" class="abs" aria-hidden="true">
+                <div class="container-init-course abs"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/libs/jquery_min_3_6.js"></script>
+    <script src="js/libs/DragDropTouch.js"></script>
+    <script src="js/libs/gsap.min.js"></script>
+    <script src="js/libs/EasePack.min.js"></script>
+
+    <script src="js/libs/scorm_api.js"></script>
+    <script src="js/utils.js"></script>
+    <script src="js/preload.js"></script>
+    <script src="js/main.js"></script>
+
+    <script>init()</script>
+</body>
+
+</html>

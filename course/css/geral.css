@@ -1,0 +1,148 @@
+/* FONTS */
+@font-face {
+  font-family: VivoTypeLight;
+  src: url('../fonts/VivoTypeW05-Light.woff2') format('woff2'),
+    url('../fonts/VivoTypeW05-Light.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: VivoTypeRegular;
+  src: url('../fonts/VivoTypeW05-Regular.woff2') format('woff2'),
+    url('../fonts/VivoTypeW05-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: VivoTypeBold;
+  src: url('../fonts/VivoTypeW05-Bold.woff2') format('woff2'),
+    url('../fonts/VivoTypeW05-Bold.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Cores init */
+:root {
+  --white: #fff;
+  --black: #000;
+  --orange: #ff9900;
+  --roxo-vivo: #660099;
+  --green-vivo: #82d400;
+  --amarelo-vivo: #FADC50;
+  --magenta-vivo: #eb3d7d;
+}
+
+/* Cores end */
+
+/* hud */
+.hud {
+  display: none;
+}
+
+/* Buttons */
+.disabled {
+  cursor: default;
+  touch-action: none;
+  pointer-events: none;
+  filter: grayscale(1);
+}
+
+/* FOR SCREEN READERS */
+.sr-only {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+/* CLOSE CONTAINER */
+#quitText {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 49%;
+  text-align: center;
+  color: #41185b;
+  font-size: 3rem;
+  transform: translate(-50%, -50%);
+  font-family: VivoTypeBold, Helvetica, sans-serif;
+}
+
+/* ANIMATIONS */
+.pulse {
+  animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: translate(-50%, -50%) scale(0.9);
+  }
+
+  70% {
+    transform: translate(-50%, -50%) scale(1);
+    box-shadow: 0 0 0 50px rgba(102, 0, 153, 0);
+  }
+
+  100% {
+    transform: translate(-50%, -50%) scale(0.9);
+    box-shadow: 0 0 0 0 rgba(102, 0, 153, 0);
+  }
+}
+
+.hlBtn {
+  animation: hlbtn 1.5s linear infinite forwards;
+}
+
+@keyframes hlbtn {
+  0% {
+    filter: drop-shadow(0px 0px 2px #fff);
+  }
+
+  50% {
+    filter: drop-shadow(0px 0px 12px #fff);
+  }
+
+  100% {
+    filter: drop-shadow(0px 0px 2px #fff);
+  }
+}
+
+.fade_in {
+  animation: fadeIn .5s forwards linear;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes btn {
+  0% {
+    transform: translateY(-50%) scale(1);
+  }
+
+  25% {
+    transform: translateY(-50%) scale(.8);
+  }
+
+  50% {
+    transform: translateY(-50%) scale(1);
+  }
+
+  75% {
+    transform: translateY(-50%) scale(.8);
+  }
+
+  100% {
+    transform: translateY(-50%) scale(1);
+  }
+}

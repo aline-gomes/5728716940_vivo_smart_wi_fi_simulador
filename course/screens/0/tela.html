@@ -1,0 +1,21 @@
+<!-- Tela Css -->
+<link rel="stylesheet" href="./screens/0/tela.css">
+
+<!-- Tela Html -->
+<div class="abs content divImg">
+    <img class="retranca" src="./screens/0/img/retranca.png" alt="">
+    <button id="btn_iniciar" class="pulse abs divImg" onclick="showIntroducao();" alt="">Iniciar</button>
+
+    <div id="container_introducao" class="abs" style="display: none;">
+        <p>
+            <span>Seja bem-vindo(a)!</span> Vamos simular algumas funcionalidades desse app que possibilita ao cliente
+            gerenciar sua rede Wi-Fi de forma rápida e prática.
+        </p>
+
+        <button id="btn_arrow" class="pulse abs divImg" onclick="screen.next();" alt=""></button>
+    </div>
+</div>
+
+<!-- Tela Js -->
+<script src="./screens/0/tela.js"></script>
+<script>init()</script>
