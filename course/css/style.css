@@ -59,12 +59,17 @@ body {
   position: absolute;
 }
 
-.divImg {
+.divImg, section {
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
   background-color: transparent;
   image-rendering: -webkit-optimize-contrast;
+}
+
+section {
+  width: 100%;
+  height: 100%;
 }
 
 .abs {
