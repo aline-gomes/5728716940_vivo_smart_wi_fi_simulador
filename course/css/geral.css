@@ -49,6 +49,13 @@
   filter: grayscale(1);
 }
 
+button#btn_arrow {
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 4rem;
+}
+
 /* FOR SCREEN READERS */
 .sr-only {
   position: absolute;
@@ -73,6 +80,18 @@
 }
 
 /* BALÃO */
+.mascara_balao {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.hole {
+    box-shadow: 0 0 0 99999px rgba(44, 5, 59, .9);
+}
+
 .balao {
     display: flex;
     justify-content: center;
@@ -98,6 +117,13 @@
     width: 3rem;
     height: 3rem;
     background: url(../img/seta_balao.png) center center/contain no-repeat;
+}
+
+.balao .seta.cima {
+    position: absolute;
+    top: -2.7rem;
+    left: 3rem;
+    transform: scale(-1);
 }
 
 .balao button.fechar {
