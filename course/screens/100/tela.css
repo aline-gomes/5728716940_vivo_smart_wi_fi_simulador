@@ -9,6 +9,7 @@
 }
 
 .foco {
+    z-index: 1;
     top: 42%;
     left: 50%;
     background-color: transparent;
@@ -17,6 +18,7 @@
     border-radius: 50%;
     border: 5px dashed white;
     cursor: pointer;
+    display: none;
 }
 
 .s1 {
@@ -58,6 +60,14 @@
     left: 65%;
 }
 
+.s2 .hole {
+    left: 50%;
+    top: 42%;
+    width: 16em;
+    height: 16em;
+    border-radius: 50%;
+}
+
 .s3 {
     background-image: url(img/86.png);
 }
@@ -71,6 +81,13 @@
 .s3 .foco {
     border: 5px dashed #CC3D70;
     top: 91%;
+}
+
+.s3 .hole {
+    left: 50%;
+    top: 91%;
+    width: 36em;
+    height: 8em;
 }
 
 .s4 {

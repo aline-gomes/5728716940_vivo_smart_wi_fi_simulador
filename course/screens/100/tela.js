@@ -1,6 +1,6 @@
 //Para abrir em outro card só trocar o t
-let t = 1, 
-telas = 0
+let t = 0,
+    telas = 0
 
 function init() {
     telas = document.querySelectorAll('section')
@@ -12,7 +12,7 @@ function init() {
 }
 
 function nextCard() {
-    if ((t + 1) == telas.length){
+    if ((t + 1) == telas.length) {
         console.log('aqui acaba')
         return
     }
@@ -21,6 +21,10 @@ function nextCard() {
     telas[t].style.display = 'block'
 }
 
-function closeBalao(e){
-    e.parentElement.parentElement.removeChild(e.parentElement)
+function closeBalao(e) {
+    e.parentElement.parentElement.parentElement.removeChild(e.parentElement.parentElement)
+    let y = telas[t].querySelector('.pulse')
+    if (y) {
+        y.style.display = 'block'
+    }
 }
