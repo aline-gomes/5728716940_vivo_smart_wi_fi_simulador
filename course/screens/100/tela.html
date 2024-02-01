@@ -1,0 +1,44 @@
+<!-- Tela Css -->
+<link rel="stylesheet" href="./screens/100/tela.css">
+
+<!-- Tela Html -->
+<div class="abs content">
+    <section class="s1">
+        <p class="abs p1">Reiniciando o roteador</p>
+        <p class="abs p2">
+            Vamos acessar o item “Roteador” e reiniciar o HGU?
+        </p>
+        <img src="./img/bt_avancar.png" alt="" class="abs" onclick="nextCard()">
+    </section>
+
+    <section class="s2">
+        <div class="balao abs">
+            <p>Clique sobre ele!</p>
+            <div class="seta"></div>
+            <button class="fechar" onclick="closeBalao(this)"></button>
+        </div>
+        <div class="abs foco pulse" onclick="nextCard()"></div>
+    </section>
+
+    <section class="s3">
+        <div class="balao abs">
+            <p>Pressione “Reinicie” e siga conforme indicado.</p>
+            <div class="seta"></div>
+            <button class="fechar" onclick="closeBalao(this)"></button>
+        </div>
+        <div class="abs foco pulse" onclick="nextCard()"></div>
+    </section>
+
+    <section class="s4">
+        <div class="abs foco pulse" onclick="nextCard()"></div>
+    </section>
+
+    <section class="s5">
+        <div class="abs foco pulse" onclick="nextCard()"></div>
+    </section>
+
+</div>
+
+<!-- Tela Js -->
+<script src="./screens/100/tela.js"></script>
+<script>init()</script>

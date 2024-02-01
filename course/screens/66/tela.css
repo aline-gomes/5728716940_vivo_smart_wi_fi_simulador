@@ -1,0 +1,25 @@
+.content {
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-image: url(../66/img/bg.png);
+}
+
+.destaque.d0 {
+    left: 50%;
+    top: 58%;
+    width: 86%;
+    height: 83%;
+}
+
+#btn_arrow {
+    display: none;
+    opacity: 0;
+    bottom: 10%;
+    left: 84%;
+    width: 7rem;
+    height: 7rem;
+    background-image: url(../../img/bt_avancar.png);
+}

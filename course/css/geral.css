@@ -119,6 +119,13 @@ button#btn_arrow {
     background: url(../img/seta_balao.png) center center/contain no-repeat;
 }
 
+.balao .seta.cima {
+    position: absolute;
+    top: -2.7rem;
+    left: 3rem;
+    transform: scale(-1);
+}
+
 .balao button.fechar {
     position: absolute;
     top: -1rem;
