@@ -8,6 +8,17 @@
     color: white;
 }
 
+.foco {
+    top: 42%;
+    left: 50%;
+    background-color: transparent;
+    width: 35vh;
+    height: 35vh;
+    border-radius: 50%;
+    border: 5px dashed white;
+    cursor: pointer;
+}
+
 .s1 {
     background-image: url(../../img/bg_portrait.png);
 }
@@ -41,8 +52,44 @@
     background-image: url(img/26.png);
 }
 
-.balao.b0 {
+.s2 .balao {
     width: 50%;
     top: 30%;
     left: 65%;
+}
+
+.s3 {
+    background-image: url(img/86.png);
+}
+
+.s3 .balao {
+    width: 50%;
+    top: 72%;
+    left: 65%;
+}
+
+.s3 .foco {
+    border: 5px dashed #CC3D70;
+    top: 91%;
+}
+
+.s4 {
+    background-image: url(img/87.png);
+}
+
+.s4 .foco {
+    border: 5px dashed #609;
+    top: 60.5%;
+    left: 66%;
+}
+
+.s5 {
+    background-image: url(img/88.png);
+}
+
+.s5 .foco {
+    border: 5px dashed #CC3D70;
+    top: 91%;
+    width: 38vh;
+    height: 38vh;
 }

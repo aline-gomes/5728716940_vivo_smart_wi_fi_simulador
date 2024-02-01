@@ -14,6 +14,7 @@ function init() {
 function nextCard() {
     if ((t + 1) == telas.length){
         console.log('aqui acaba')
+        return
     }
     telas[t].style.display = 'none'
     t++
