@@ -1,0 +1,283 @@
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3.5rem;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-image: url(../../img/bg_portrait.png);
+}
+
+.content p.anim {
+    position: relative;
+    width: 85%;
+    text-align: left;
+    font-size: 2.2rem;
+    color: var(--white);
+    font-family: VivoTypeBold, Arial, Helvetica, sans-serif;
+}
+
+#btn_vivinho {
+    width: 19rem;
+    height: 19rem;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    margin-top: 4rem;
+    border-radius: 2rem;
+    animation: pulse_pink 1.5s infinite;
+    box-shadow: 0 0 0 0 rgba(235, 61, 125, 0.5);
+    background-image: url(../2/img/btn_vivinho.png);
+    filter: drop-shadow(0.3rem 0.3rem 1.2rem rgba(0, 0, 0, .5));
+}
+
+/* LOAD FAKE */
+.load_fake,
+.load_fake img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.load_fake {
+    height: 100%;
+    z-index: 5;
+    background-color: #79009d;
+}
+
+.load_fake img {
+    height: auto;
+    animation: load_fake_anim 1s infinite;
+}
+
+/* PRINTS MÓDULO 1 */
+.prints_modulo_1 {
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    z-index: 4;
+    animation: fadeIn .5s forwards linear;
+    background-image: url(../2/img/modulo_1_print_1.png);
+}
+
+.destaque {
+    top: 96.3%;
+    height: 5rem;
+    z-index: 2;
+}
+
+.destaque.lock,
+input.lock {
+    cursor: default;
+    touch-action: none;
+    pointer-events: none;
+}
+
+#d0.destaque {
+    left: 85.2%;
+    width: 7.5rem;
+}
+
+#d1.destaque,
+#d2.destaque,
+#d3.destaque {
+    left: 84.2%;
+    width: 8rem;
+}
+
+#d4.destaque,
+#d11.destaque,
+#d13.destaque,
+#d14.destaque {
+    top: 91%;
+    left: 50.1%;
+    width: 9rem;
+    height: 9rem;
+    border-radius: 7rem;
+    border: 5px dashed #CC3D70;
+}
+
+#d5.destaque,
+#d12.destaque,
+#d15.destaque,
+#d17.destaque {
+    display: none;
+}
+
+.mascara_balao {
+    z-index: 8;
+}
+
+.balao.b0 {
+    width: 50%;
+    top: 56%;
+    left: 54%;
+}
+
+.hole {
+    left: 50%;
+    top: 27%;
+    width: 84%;
+    height: 39%;
+}
+
+#d6.destaque,
+#d10.destaque {
+    top: 23%;
+    left: 50.1%;
+    width: 41rem;
+    height: 4rem;
+}
+
+input[type="text"] {
+    top: 23%;
+    left: 50.1%;
+    width: 39rem;
+    height: 3rem;
+    border: none;
+    z-index: 20;
+    color: #cbcbcb;
+    font-size: 1.9rem;
+    padding: 0.5rem 1rem;
+    font-family: VivoTypeRegular;
+    background-color: transparent;
+}
+
+#d6_2.destaque,
+#d7.destaque,
+#d9.destaque,
+#d10_2.destaque {
+    top: 34.2%;
+    left: 50%;
+    width: 10rem;
+    height: 10rem;
+    border-radius: 6rem;
+    border: 5px dashed #CC3D70;
+}
+
+#d7.destaque {
+    top: 43.6%;
+}
+
+#d8.destaque {
+    top: 26%;
+    left: 51.3%;
+    width: 30rem;
+    height: 4rem;
+}
+
+#d9.destaque {
+    top: 38.5%;
+}
+
+#d10.destaque {
+    top: 20%;
+}
+
+#d10_2.destaque {
+    top: 30.5%;
+}
+
+#d11.destaque {
+    top: 87%;
+}
+
+#d14.destaque {
+    top: 87.5%;
+}
+
+#d16.destaque {
+    top: 42%;
+    left: 50.2%;
+    width: 15rem;
+    height: 15rem;
+    border-radius: 8rem;
+    border: 5px dashed #fff;
+}
+
+#container_print_17 {
+    filter: brightness(0.5);
+}
+
+/* FEEDBACK */
+.feedback {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 7;
+    background: rgba(44, 5, 59, .95);
+}
+
+.feedback img {
+    width: 30%;
+    height: auto;
+}
+
+.feedback button.fechar {
+    position: absolute;
+    top: 57%;
+    right: 32%;
+    width: 8%;
+    height: 5%;
+    border: none;
+    cursor: pointer;
+    background: url(../../img/btn_close.png) center center/contain no-repeat;
+}
+
+/* ANIMATION */
+@keyframes pulse_pink {
+    0% {
+        transform: scale(0.9);
+    }
+
+    70% {
+        transform: scale(1);
+        box-shadow: 0 0 0 50px rgba(235, 61, 125, 0);
+    }
+
+    100% {
+        transform: scale(0.9);
+        box-shadow: 0 0 0 0 rgba(235, 61, 125, 0);
+    }
+}
+
+.pulse2 {
+    animation: pulse2 1.5s infinite;
+}
+
+@keyframes pulse2 {
+    0% {
+        transform: scale(0.9);
+    }
+
+    70% {
+        transform: scale(1);
+        box-shadow: 0 0 0 50px rgba(102, 0, 153, 0);
+    }
+
+    100% {
+        transform: scale(0.9);
+        box-shadow: 0 0 0 0 rgba(102, 0, 153, 0);
+    }
+}
+
+@keyframes load_fake_anim {
+    0% {
+        transform: scale(0.9);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
