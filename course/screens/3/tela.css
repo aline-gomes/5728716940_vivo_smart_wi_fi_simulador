@@ -1,0 +1,200 @@
+.content {
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    color: white;
+}
+
+.foco {
+    top: 42%;
+    left: 50%;
+    width: 13rem;
+    height: 13rem;
+    cursor: pointer;
+    border-radius: 50%;
+    border: 5px dashed white;
+    background-color: transparent;
+}
+
+.hole {
+    top: 3.75%;
+    left: 89.5%;
+    width: 8%;
+    height: 5%;
+}
+
+.balao .seta {
+    top: -2.7rem;
+    left: 9rem;
+    transform: scaleY(-1);
+}
+
+/* TELAS PRINCIPAIS */
+.capas {
+    background-image: url(../../img/bg_portrait.png);
+}
+
+.capas .p1 {
+    top: 25%;
+    left: 50%;
+    font-size: 92px;
+    width: 95%;
+    text-align: center;
+    font-family: 'VivoTypeBold';
+}
+
+.capas .p2 {
+    top: 45%;
+    left: 50%;
+    width: 80%;
+    font-size: 54px;
+    margin-top: 2rem;
+    text-align: center;
+    font-family: 'VivoTypeLight';
+}
+
+.capas img {
+    cursor: pointer;
+    top: 80%;
+    left: 83%;
+    width: 16%;
+}
+
+/* FIM TELAS PRINCIPAIS */
+
+.s2 {
+    background-image: url(img/print_1.png);
+}
+
+.s2 .hole {
+    top: 19%;
+    left: 62.5%;
+    width: 23%;
+    height: 13%;
+}
+
+.s2 .balao {
+    top: 41%;
+    left: 65%;
+    width: 50%;
+}
+
+.s2 .balao .seta {
+    top: -2.7rem;
+    left: 9rem;
+    transform: scaleY(-1);
+}
+
+.s2 .foco {
+    top: 19.5%;
+    left: 62.5%;
+}
+
+.s4 {
+    background-image: url(img/print_2.png);
+}
+
+.s4 .foco {
+    top: 45.9%;
+    left: 80%;
+    border: 5px dashed #609;
+}
+
+.s5 {
+    background-image: url(img/print_3.png);
+}
+
+.s5 .balao {
+    top: 20%;
+    left: 65%;
+    width: 50%;
+}
+
+.s5 .balao .seta {
+    left: 16rem;
+}
+
+.s5 .foco {
+    top: 3.6%;
+    left: 91%;
+    width: 5rem;
+    height: 5rem;
+}
+
+.s6 {
+    background-image: url(img/print_4.png);
+}
+
+.s6 .hole {
+    top: 8%;
+    left: 64.2%;
+    width: 13%;
+}
+
+.s6 .balao {
+    top: 20%;
+    left: 65%;
+    width: 50%;
+}
+
+.s6 .foco {
+    top: 8%;
+    left: 64%;
+    width: 7rem;
+    height: 7rem;
+    border: 5px dashed #CC3D70;
+}
+
+.s8 {
+    background-image: url(img/print_5.png);
+}
+
+.s8 #foco_1 {
+    top: 41.2%;
+    left: 23%;
+    height: 3.5rem;
+    border-radius: unset;
+    border: 5px dashed #609;
+    pointer-events: none;
+    touch-action: none;
+}
+
+.s8 #foco_2 {
+    top: 54%;
+    left: 24%;
+    width: 14rem;
+    height: 6rem;
+    border-radius: unset;
+    border: 5px dashed #609;
+}
+
+.s9 {
+    background-image: url(img/print_6.png);
+}
+
+.s9 .hole {
+    top: 91.4%;
+    left: 50%;
+    width: 83%;
+    height: 6%;
+}
+
+.s9 .balao {
+    top: 67%;
+    left: 50%;
+    width: 50%;
+}
+
+.s9 .balao .seta {
+    top: unset;
+    bottom: -2.7rem;
+    transform: none;
+}
+
+.s9 .foco {
+    top: 91.5%;
+    left: 50%;
+    border: 5px dashed #CC3D70;
+}

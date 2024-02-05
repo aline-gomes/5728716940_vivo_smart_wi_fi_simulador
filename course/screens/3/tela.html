@@ -1,0 +1,95 @@
+<!-- Tela Css -->
+<link rel="stylesheet" href="./screens/3/tela.css">
+
+<!-- Tela Html -->
+<div class="abs content">
+    <section class="s1 capas">
+        <p class="abs p1">Personalizando dispositivos</p>
+        <p class="abs p2">Vamos aprender a personalizar os dispositivos?</p>
+        <img src="./img/bt_avancar.png" alt="" class="pulse abs" onclick="nextCard()">
+    </section>
+
+    <section class="s2">
+        <div class="hole abs"></div>
+
+        <div class="balao abs">
+            <p>Para personalizar um dispositivo, estando na tela inicial do App, selecione o tipo de dispositivo
+                desejado. Neste exemplo, selecionaremos “Celulares”.</p>
+
+            <div class="seta"></div>
+            <button class="pulse2 fechar" onclick="closeBalao(this)"></button>
+        </div>
+
+        <div class="abs foco pulse" onclick="nextCard()" style="display: none;"></div>
+    </section>
+
+    <section class="s3 capas">
+        <p class="abs p1">Personalizando dispositivos</p>
+        <p class="abs p2">Neste exemplo, utilizaremos o dispositivo “Cleber”.</p>
+        <img src="./img/bt_avancar.png" alt="" class="pulse abs" onclick="nextCard()">
+    </section>
+
+    <section class="s4">
+        <div class="abs foco pulse" onclick="nextCard()"></div>
+    </section>
+
+    <section class="s5">
+        <div class="hole abs"></div>
+
+        <div class="balao abs">
+            <p>
+                Para personalizar o<br> dispositivo, clique nos três pontinhos localizados no canto superior direito da
+                tela.
+            </p>
+
+            <div class="seta"></div>
+            <button class="pulse2 fechar" onclick="closeBalao(this)"></button>
+        </div>
+
+        <div class="abs foco pulse" onclick="nextCard()" style="display: none;"></div>
+    </section>
+
+    <section class="s6">
+        <div class="hole abs"></div>
+
+        <div class="balao abs">
+            <p> Clique em “Editar”<br> para alterar o nome do dispositivo em questão.</p>
+
+            <div class="seta"></div>
+            <button class="pulse2 fechar" onclick="closeBalao(this)"></button>
+        </div>
+
+        <div class="abs foco pulse" onclick="nextCard()" style="display: none;"></div>
+    </section>
+
+    <section class="s7 capas">
+        <p class="abs p1">Personalizando dispositivos</p>
+
+        <p class="abs p2">Além da troca de nome, você poderá alterar o tipo do dispositivo entre celular, computador,
+            tablet, console ou TV.</p>
+
+        <img src="./img/bt_avancar.png" alt="" class="pulse abs" onclick="nextCard()">
+    </section>
+
+    <section class="s8">
+        <div id="foco_1" class="abs foco pulse"></div>
+        <div id="foco_2" class="abs foco pulse" onclick="nextCard()" style="display: none;"></div>
+    </section>
+
+    <section class="s9">
+        <div class="hole abs"></div>
+
+        <div class="balao abs">
+            <p>Após a edição, clique em “Salvar mudanças”.</p>
+
+            <div class="seta"></div>
+            <button class="pulse2 fechar" onclick="closeBalao(this)"></button>
+        </div>
+
+        <div class="abs foco pulse" onclick="nextCard()" style="display: none;"></div>
+    </section>
+</div>
+
+<!-- Tela Js -->
+<script src="./screens/3/tela.js"></script>
+<script>init()</script>

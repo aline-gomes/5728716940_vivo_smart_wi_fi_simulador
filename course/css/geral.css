@@ -50,10 +50,10 @@
 }
 
 button#btn_arrow {
-    border: none;
-    outline: none;
-    cursor: pointer;
-    border-radius: 4rem;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  border-radius: 4rem;
 }
 
 /* FOR SCREEN READERS */
@@ -89,58 +89,58 @@ button#btn_arrow {
 }
 
 .hole {
-    box-shadow: 0 0 0 99999px rgba(44, 5, 59, .9);
+  box-shadow: 0 0 0 99999px rgba(44, 5, 59, .9);
 }
 
 .balao {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 10%;
-    border-radius: 1.5rem;
-    background: #78009d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 10%;
+  border-radius: 1.5rem;
+  background: #78009d;
 }
 
 .balao p {
-    text-align: center;
-    font-family: VivoTypeRegular;
-    font-size: 1.5rem;
-    line-height: 1.5rem;
-    padding: 1.5rem;
-    color: #fff;
+  text-align: center;
+  font-family: VivoTypeRegular;
+  font-size: 1.5rem;
+  line-height: 1.5rem;
+  padding: 1.5rem;
+  color: #fff;
 }
 
 .balao .seta {
-    position: absolute;
-    bottom: -2.7rem;
-    left: 3rem;
-    width: 3rem;
-    height: 3rem;
-    background: url(../img/seta_balao.png) center center/contain no-repeat;
+  position: absolute;
+  bottom: -2.7rem;
+  left: 3rem;
+  width: 3rem;
+  height: 3rem;
+  background: url(../img/seta_balao.png) center center/contain no-repeat;
 }
 
 .balao .seta.cima {
-    position: absolute;
-    top: -2.7rem;
-    left: 3rem;
-    transform: scale(-1);
+  position: absolute;
+  top: -2.7rem;
+  left: 3rem;
+  transform: scale(-1);
 }
 
 .balao button.fechar {
-    position: absolute;
-    top: -1rem;
-    right: -1rem;
-    width: 4rem;
-    height: 4rem;
-    border: none;
-    cursor: pointer;
-    background: url(../img/btn_close.png) center center/contain;
+  position: absolute;
+  top: -1rem;
+  right: -1rem;
+  width: 4rem;
+  height: 4rem;
+  border: none;
+  cursor: pointer;
+  background: url(../img/btn_close.png) center center/contain;
 }
 
 /* DESTAQUE */
 .destaque {
-    border: 4px dashed purple;
-    cursor: pointer;
+  border: 4px dashed purple;
+  cursor: pointer;
 }
 
 /* ANIMATIONS */
@@ -160,6 +160,26 @@ button#btn_arrow {
 
   100% {
     transform: translate(-50%, -50%) scale(0.9);
+    box-shadow: 0 0 0 0 rgba(102, 0, 153, 0);
+  }
+}
+
+.pulse2 {
+  animation: pulse2 1.5s infinite;
+}
+
+@keyframes pulse2 {
+  0% {
+    transform: scale(0.9);
+  }
+
+  70% {
+    transform: scale(1);
+    box-shadow: 0 0 0 50px rgba(102, 0, 153, 0);
+  }
+
+  100% {
+    transform: scale(0.9);
     box-shadow: 0 0 0 0 rgba(102, 0, 153, 0);
   }
 }
@@ -193,27 +213,5 @@ button#btn_arrow {
 
   100% {
     opacity: 1;
-  }
-}
-
-@keyframes btn {
-  0% {
-    transform: translateY(-50%) scale(1);
-  }
-
-  25% {
-    transform: translateY(-50%) scale(.8);
-  }
-
-  50% {
-    transform: translateY(-50%) scale(1);
-  }
-
-  75% {
-    transform: translateY(-50%) scale(.8);
-  }
-
-  100% {
-    transform: translateY(-50%) scale(1);
   }
 }
