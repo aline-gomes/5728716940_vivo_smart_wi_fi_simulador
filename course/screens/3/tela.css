@@ -81,12 +81,6 @@
     width: 50%;
 }
 
-.s2 .balao .seta {
-    top: -2.7rem;
-    left: 9rem;
-    transform: scaleY(-1);
-}
-
 .s2 .foco {
     top: 19.5%;
     left: 62.5%;
