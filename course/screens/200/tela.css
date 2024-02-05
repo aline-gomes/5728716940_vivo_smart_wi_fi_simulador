@@ -1,0 +1,112 @@
+.content {
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    /* background-image: url(../57/img/bg.png); */
+    color: white;
+}
+
+.foco {
+    z-index: 1;
+    top: 42%;
+    left: 50%;
+    background-color: transparent;
+    width: 35vh;
+    height: 35vh;
+    border-radius: 50%;
+    border: 5px dashed white;
+    cursor: pointer;
+    display: none;
+}
+
+.s1 {
+    background-image: url(../../img/bg_portrait.png);
+}
+
+.s1 .p1 {
+    font-family: 'VivoTypeBold';
+    top: 25%;
+    left: 50%;
+    font-size: 92px;
+    text-align: center;
+    width: 65%;
+}
+
+.s1 .p2 {
+    font-family: 'VivoTypeLight';
+    top: 45%;
+    left: 50%;
+    font-size: 54px;
+    text-align: center;
+    width: 80%;
+}
+
+.s1 img {
+    cursor: pointer;
+    top: 90%;
+    left: 83%;
+    width: 16%;
+}
+
+.s2 {
+    background-image: url(img/26.png);
+}
+
+.s2 .balao {
+    width: 50%;
+    top: 30%;
+    left: 65%;
+}
+
+.s2 .hole {
+    left: 50%;
+    top: 42%;
+    width: 16em;
+    height: 16em;
+    border-radius: 50%;
+}
+
+.s3 {
+    background-image: url(img/86.png);
+}
+
+.s3 .balao {
+    width: 50%;
+    top: 72%;
+    left: 65%;
+}
+
+.s3 .foco {
+    border: 5px dashed #CC3D70;
+    top: 91%;
+}
+
+.s3 .hole {
+    left: 50%;
+    top: 91%;
+    width: 36em;
+    height: 8em;
+}
+
+.s4 {
+    background-image: url(img/87.png);
+}
+
+.s4 .foco {
+    border: 5px dashed #609;
+    top: 60.5%;
+    left: 66%;
+}
+
+.s5 {
+    background-image: url(img/88.png);
+}
+
+.s5 .foco {
+    border: 5px dashed #CC3D70;
+    top: 91%;
+    width: 38vh;
+    height: 38vh;
+}
