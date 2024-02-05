@@ -1,0 +1,121 @@
+.content,
+.s1 {
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.foco.lock,
+input.lock {
+    cursor: default;
+    touch-action: none;
+    pointer-events: none;
+}
+
+.foco {
+    top: 96.3%;
+    height: 5rem;
+    z-index: 2;
+    cursor: pointer;
+    border: 5px dashed #609;
+}
+
+.slider .foco {
+    left: 84.2%;
+    width: 8rem;
+}
+
+.foco.pink {
+    top: 34.2%;
+    left: 50.35%;
+    width: 9rem;
+    height: 9rem;
+    border-radius: 7rem;
+    border: 5px dashed #CC3D70;
+}
+
+input[type="text"] {
+    top: 23%;
+    left: 50.1%;
+    width: 39rem;
+    height: 3rem;
+    border: none;
+    z-index: 20;
+    color: #cbcbcb;
+    font-size: 1.9rem;
+    padding: 0.5rem 1rem;
+    font-family: VivoTypeRegular;
+    background-color: transparent;
+}
+
+.hole {
+    left: 50%;
+    top: 27%;
+    width: 84%;
+    height: 39%;
+}
+
+.balao {
+    width: 50%;
+    top: 56%;
+    left: 54%;
+}
+
+/* FEEDBACK */
+.feedback {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 7;
+    background: rgba(44, 5, 59, .95);
+}
+
+.feedback img {
+    width: 30%;
+    height: auto;
+}
+
+.feedback button.fechar {
+    position: absolute;
+    top: 57%;
+    right: 32%;
+    width: 8%;
+    height: 5%;
+    border: none;
+    cursor: pointer;
+    background: url(../../img/btn_close.png) center center/contain no-repeat;
+}
+
+/* ANIMATION */
+@keyframes pulse_pink {
+    0% {
+        transform: scale(0.9);
+    }
+
+    70% {
+        transform: scale(1);
+        box-shadow: 0 0 0 50px rgba(235, 61, 125, 0);
+    }
+
+    100% {
+        transform: scale(0.9);
+        box-shadow: 0 0 0 0 rgba(235, 61, 125, 0);
+    }
+}
+
+@keyframes load_fake_anim {
+    0% {
+        transform: scale(0.9);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
