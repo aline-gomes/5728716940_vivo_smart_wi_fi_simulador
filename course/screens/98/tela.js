@@ -5,14 +5,11 @@ function init() {
   let btFecharBalao = document.querySelector(".balao button.fechar");
 
   let destaque = document.querySelector(".destaque.d0");
+  let coverCheckBox = document.querySelector(".coverCheckBox");
 
   // balloon events
   let showDestaque = _ => {
     destaque.style.display = "block";
-
-    setTimeout(() => {
-      screen.next();
-    }, 2000);
   }
 
   let handleCloseBalloon = (e) => {
@@ -22,6 +19,17 @@ function init() {
     showDestaque();
   }
   btFecharBalao.addEventListener("click", handleCloseBalloon);
+
+  // destaque events
+  let handleAvancar = (e) => {
+    coverCheckBox.style.display = "none";
+    e.target.style.display = "none";
+    
+    setTimeout(() => {
+      screen.next();
+    }, 1000);
+  }
+  destaque.addEventListener("click", handleAvancar);
 
   // Animation
   let tl = new gsap.timeline();

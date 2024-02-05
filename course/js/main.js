@@ -2,7 +2,7 @@
 //Numero de telas
 var n_telas = 1;
 //Tela inicial 0
-var c_screen = 95;
+var c_screen = 112;
 
 const container = $("#loaded_content");
 //#endregion

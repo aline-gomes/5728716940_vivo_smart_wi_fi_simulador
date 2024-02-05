@@ -4,24 +4,31 @@ function init() {
   let balao = document.querySelector(".balao.b0");
   let btFecharBalao = document.querySelector(".balao button.fechar");
 
-  let destaque = document.querySelector(".destaque.d0");
+  let destaques = document.querySelectorAll(".destaque");
 
   // balloon events
-  let showDestaque = _ => {
-    destaque.style.display = "block";
-
-    setTimeout(() => {
-      screen.next();
-    }, 2000);
+  let showDestaque = (dest) => {
+    destaques[dest].style.display = "block";
   }
 
   let handleCloseBalloon = (e) => {
     e.target.parentNode.style.display = "none";
     mascara.style.display = "none";
 
-    showDestaque();
+    showDestaque(0);
+
+    setTimeout(() => {
+      destaques[0].style.display = "none";
+      showDestaque(1);
+    }, 2000);
   }
   btFecharBalao.addEventListener("click", handleCloseBalloon);
+
+  // destaque events
+  let handleAvancar = (e) => {
+    screen.next();
+  }
+  destaques[1].addEventListener("click", handleAvancar);
 
   // Animation
   let tl = new gsap.timeline();

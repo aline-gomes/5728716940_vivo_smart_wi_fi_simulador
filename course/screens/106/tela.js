@@ -9,10 +9,6 @@ function init() {
   // balloon events
   let showDestaque = _ => {
     destaque.style.display = "block";
-
-    setTimeout(() => {
-      screen.next();
-    }, 2000);
   }
 
   let handleCloseBalloon = (e) => {
@@ -22,6 +18,12 @@ function init() {
     showDestaque();
   }
   btFecharBalao.addEventListener("click", handleCloseBalloon);
+
+  // destaque events
+  let handleAvancar = (e) => {
+    screen.next();
+  }
+  destaque.addEventListener("click", handleAvancar);
 
   // Animation
   let tl = new gsap.timeline();
