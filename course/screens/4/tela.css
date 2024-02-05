@@ -10,19 +10,19 @@
 .foco {
     top: 42%;
     left: 50%;
-    width: 5rem;
-    height: 5rem;
+    width: 7rem;
+    height: 7rem;
     cursor: pointer;
     border-radius: 50%;
-    border: 5px dashed white;
+    border: 5px dashed #609;
     background-color: transparent;
 }
 
 .hole {
-    top: 66.3%;
-    left: 71.5%;
-    width: 23%;
-    height: 5%;
+    top: 9.4%;
+    left: 50%;
+    width: 88%;
+    height: 4%;
 }
 
 .balao .seta {
@@ -49,7 +49,6 @@
     left: 50%;
     width: 80%;
     font-size: 54px;
-    margin-top: 2rem;
     text-align: center;
     font-family: 'VivoTypeLight';
 }
@@ -59,6 +58,7 @@
     top: 80%;
     left: 83%;
     width: 16%;
+    height: auto;
 }
 
 .s2 {
@@ -66,36 +66,32 @@
 }
 
 .s2 .hole {
-    top: 3.75%;
-    left: 89.5%;
-    width: 8%;
-    height: 5%;
+    top: 81.2%;
+    left: 13.5%;
+    width: 15%;
+    height: 10%;
 }
 
 .s2 .balao {
-    top: 20%;
-    left: 65%;
+    top: 64%;
+    left: 31%;
     width: 50%;
 }
 
 .s2 .balao .seta {
-    left: 16rem;
+    top: unset;
+    left: 3rem;
+    transform: scaleX(-1);
 }
 
 .s2 .foco {
-    top: 3.6%;
-    left: 91%;
+    top: 79.8%;
+    left: 13.1%;
+    border: 5px dashed #fff;
 }
 
 .s3 {
     background-image: url(img/print_2.png);
-}
-
-.s3 .hole {
-    top: 13%;
-    left: 75.5%;
-    width: 37%;
-    height: 4%;
 }
 
 .s3 .balao {
@@ -107,8 +103,6 @@
 .s3 .foco {
     top: 13.5%;
     left: 76%;
-    width: 7rem;
-    height: 7rem;
     border: 5px dashed #CC3D70;
 }
 
@@ -117,42 +111,76 @@
 }
 
 .s4 .balao {
-    top: 51%;
-    left: 65%;
+    top: 24%;
+    left: 50%;
     width: 50%;
 }
 
-.s4 .balao .seta {
-    top: unset;
-    bottom: -2.7rem;
-    left: 10rem;
-    transform: scaleY(1);
-}
-
 .s4 .foco {
-    top: 66.2%;
-    left: 72%;
-    width: 13rem;
-    height: 13rem;
-    border: 5px dashed #609;
+    top: 9.5%;
+    left: 79.8%;
+    width: 11rem;
+    height: 11rem;
+    border: 5px dashed #CC3D70;
 }
 
 .s5 {
-    background-image: url(img/print_4.png);
+    background-image: url(img/print_3.png);
 }
 
 .s5 .hole {
-    top: 3.3%;
-    left: 35.5%;
+    top: 23.2%;
+    left: 50%;
+    height: 8%;
 }
 
 .s5 .balao {
-    top: 17%;
-    left: 37%;
+    top: 42%;
+    left: 50%;
     width: 50%;
 }
 
 .s5 .foco {
-    top: 3.1%;
-    left: 91%;
+    top: 23.6%;
+    left: 80%;
+    width: 13rem;
+    height: 13rem;
+}
+
+.s6 {
+    background-image: url(img/print_4.png);
+}
+
+.s6 .hole {
+    top: 75%;
+}
+
+.s6 .balao {
+    top: 88%;
+    left: 50%;
+}
+
+.s6 .foco {
+    top: 75%;
+    left: 50%;
+    width: 27rem;
+    height: 5rem;
+    border-radius: unset;
+}
+
+.s7 {
+    background-image: url(img/print_5.png);
+}
+
+.s7 .hole {
+    top: 14.7%;
+    left: 41%;
+    width: 32%;
+    height: 8%;
+}
+
+.s7 .balao {
+    top: 29%;
+    left: 50%;
+    width: 50%;
 }

@@ -14,7 +14,7 @@
     height: 13rem;
     cursor: pointer;
     border-radius: 50%;
-    border: 5px dashed white;
+    border: 5px dashed #609;
     background-color: transparent;
 }
 
@@ -60,6 +60,7 @@
     top: 80%;
     left: 83%;
     width: 16%;
+    height: auto;
 }
 
 /* FIM TELAS PRINCIPAIS */
@@ -84,6 +85,7 @@
 .s2 .foco {
     top: 19.5%;
     left: 62.5%;
+    border: 5px dashed #fff;
 }
 
 .s4 {
@@ -93,7 +95,6 @@
 .s4 .foco {
     top: 45.9%;
     left: 80%;
-    border: 5px dashed #609;
 }
 
 .s5 {
@@ -115,6 +116,7 @@
     left: 91%;
     width: 5rem;
     height: 5rem;
+    border: 5px dashed #fff;
 }
 
 .s6 {
@@ -150,7 +152,6 @@
     left: 23%;
     height: 3.5rem;
     border-radius: unset;
-    border: 5px dashed #609;
     pointer-events: none;
     touch-action: none;
 }
@@ -161,7 +162,6 @@
     width: 14rem;
     height: 6rem;
     border-radius: unset;
-    border: 5px dashed #609;
 }
 
 .s9 {
@@ -183,7 +183,6 @@
 
 .s9 .balao .seta {
     top: unset;
-    bottom: -2.7rem;
     transform: none;
 }
 
