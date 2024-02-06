@@ -1,5 +1,5 @@
 //Para abrir em outro card só trocar o t
-let t = 0,
+var t = 13,
     telas = 0
 
 function init() {
@@ -9,8 +9,8 @@ function init() {
             return
         e.style.display = 'none'
     })
-    let tl = gsap.timeline()
-        .from('.p1', 1, { autoAlpha: 0, y: -30 })
+    let tl = gsap.timeline({ defaults: { clearProps: true } })
+        .from('.p1', 1, { autoAlpha: 0 })
         .from('.p2', 1, { autoAlpha: 0, y: -30 }, '.5');
 }
 

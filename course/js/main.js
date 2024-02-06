@@ -1,6 +1,6 @@
 //Numero de telas
 var n_telas = 1;
-var c_screen = 114;
+var c_screen = 0;
 
 const container = $("#loaded_content");
 
@@ -156,7 +156,12 @@ var modulos = {
     modulos.t_fin.push(n)
     sco.setSupend()
     sco.setRaw()
+
+    if (n == 116) {
+      sco.complet()
+      screen.goto(117)
+      return
+    }
     screen.goto(1)
   }
-
 }
