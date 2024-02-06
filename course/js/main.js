@@ -1,6 +1,6 @@
 //Numero de telas
 var n_telas = 1;
-var c_screen = 1;
+var c_screen = 117;
 
 const container = $("#loaded_content");
 
