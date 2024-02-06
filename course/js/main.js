@@ -39,7 +39,7 @@ var screen = {
       screen.lock = true;
       c_screen++;
       screen.goto();
-      hud.block_nav();
+      // hud.block_nav();
     }
   },
   back: () => {
