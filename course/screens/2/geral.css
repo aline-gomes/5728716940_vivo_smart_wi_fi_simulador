@@ -57,6 +57,11 @@ input[type="text"] {
     height: 39%;
 }
 
+.balao button.fechar {
+    top: -1rem;
+    right: -1.5rem;
+}
+
 .balao {
     top: 56%;
     left: 54%;

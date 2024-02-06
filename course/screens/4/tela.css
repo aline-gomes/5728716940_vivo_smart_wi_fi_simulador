@@ -23,6 +23,11 @@
     height: 4%;
 }
 
+.balao button.fechar {
+    top: -1rem;
+    right: -1.5rem;
+}
+
 .balao {
     top: 20%;
     left: 65%;

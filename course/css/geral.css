@@ -89,15 +89,15 @@ button#btn_arrow {
 }
 
 .hole {
-  <<<<<<< HEAD=======z-index: 3;
-  >>>>>>>Flavio box-shadow: 0 0 0 99999px rgba(44, 5, 59, .9);
+  z-index: 3;
+  box-shadow: 0 0 0 99999px rgba(44, 5, 59, .9);
 }
 
 .balao {
-  <<<<<<< HEAD=======z-index: 4;
-  >>>>>>>Flavio display: flex;
+  display: flex;
   justify-content: center;
   align-items: center;
+  z-index: 4;
   min-height: 10%;
   border-radius: 1.5rem;
   background: #78009d;
@@ -107,9 +107,8 @@ button#btn_arrow {
   text-align: center;
   font-family: VivoTypeRegular;
   font-size: 1.5rem;
-  <<<<<<< HEAD line-height: 1.5rem;
-  =======line-height: 1.8rem;
-  >>>>>>>Flavio padding: 1.5rem;
+  line-height: 1.8rem;
+  padding: 1.5rem;
   color: #fff;
 }
 
@@ -136,8 +135,8 @@ button#btn_arrow {
 
 .balao button.fechar {
   position: absolute;
-  top: 0rem;
-  right: -4rem;
+  top: .5rem;
+  right: -3.5rem;
   width: 4rem;
   height: 4rem;
   border: none;
