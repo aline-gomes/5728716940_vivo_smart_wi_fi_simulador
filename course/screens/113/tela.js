@@ -9,17 +9,25 @@ function init() {
             return
         e.style.display = 'none'
     })
+    let tl = gsap.timeline()
+        .from('.p1', 1, { autoAlpha: 0, y: -30 })
+        .from('.p2', 1, { autoAlpha: 0, y: -30 }, '.5');
+}
+
+function fadeInGeral(e) {
+    e = e.children[0]
+    gsap.from(e, 1, { autoAlpha: 0, delay: .25 })
 }
 
 function nextCard() {
     if ((t + 1) == telas.length) {
-        console.log('aqui acaba')
-        screen.next()
+        modulos.end(113)
         return
     }
     telas[t].style.display = 'none'
     t++
     telas[t].style.display = 'block'
+    fadeInGeral(telas[t])
 }
 
 function closeBalao(e) {

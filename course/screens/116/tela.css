@@ -37,7 +37,7 @@
     left: 3rem;
     width: 3rem;
     height: 3rem;
-    background: url(../img/seta_balao.png) center center/contain no-repeat;
+    background: url(../../img/seta_balao.png) center center/contain no-repeat;
   }
   
   .balao .seta.cima {
@@ -55,7 +55,7 @@
     height: 4rem;
     border: none;
     cursor: pointer;
-    background: url(../img/btn_close.png) center center/contain;
+    background: url(../../img/btn_close.png) center center/contain;
   }
 
 .content {

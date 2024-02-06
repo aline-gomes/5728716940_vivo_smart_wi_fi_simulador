@@ -13,7 +13,7 @@ function init() {
 
 function nextCard() {
     if ((t + 1) == telas.length) {
-        screen.goto(1)
+        modulos.end(3)
         console.log('aqui acaba')
         return
     }

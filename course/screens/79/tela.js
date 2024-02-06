@@ -63,7 +63,7 @@ function init() {
     let handleAvancar = (e) => {
       if (checkInput(inputField)) {
         if (currDestaque === (destaques.length - 1)) {
-          screen.next();
+          modulos.end(79)
         } else {
 
           destaques[currDestaque].style.display = "none";
