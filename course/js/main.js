@@ -1,6 +1,6 @@
 //Numero de telas
 var n_telas = 1;
-var c_screen = 58;
+var c_screen = 1;
 
 const container = $("#loaded_content");
 
@@ -19,18 +19,15 @@ async function init() {
 var screen = {
   lock: false,
   goto: (n = c_screen) => {
-
+    console.log("Goto > ",n)
     cleanStyles();
 
     n != c_screen ? (c_screen = n) : null;
     $(container).empty();
     $(container).load(`screens/${n}/tela.html`);
 
-    hud.config(n);
-
     setTimeout(() => {
       screen.lock = false;
-      hud.enable_nav();
       console.log("screen: ", c_screen);
     }, 2000);
   },
@@ -39,7 +36,7 @@ var screen = {
       screen.lock = true;
       c_screen++;
       screen.goto();
-      hud.block_nav();
+      // hud.block_nav();
     }
   },
   back: () => {
@@ -226,4 +223,22 @@ function fireClick(node) {
   } else if (typeof node.onclick == "function") {
     node.onclick();
   }
+}
+
+// Menu control
+var modulos = {
+  t_ini: [2, 3, 4, 5, 57, 64, 68, 81, 113, 114, 115, 116],
+  t_fin: [2, 3, 4, 5, 57, 64, 68, 81, 113, 114, 115],
+  end: (n) => {
+    if (modulos.t_fin.indexOf(n) != -1) {
+      screen.goto(1)
+      return
+    }
+
+    modulos.t_fin.push(n)
+    //Scormiza
+    //Scormiza
+    screen.goto(1)
+  }
+
 }

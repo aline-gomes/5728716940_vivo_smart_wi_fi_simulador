@@ -1,0 +1,505 @@
+/* BALÃO */
+.mascara_balao {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .hole {
+    z-index: 3;
+    box-shadow: 0 0 0 99999px rgba(44, 5, 59, .9);
+  }
+  
+  .balao {
+    z-index: 4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 10%;
+    border-radius: 1.5rem;
+    background: #78009d;
+  }
+  
+  .balao p {
+    text-align: center;
+    font-family: VivoTypeRegular;
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+    padding: 1.5rem;
+    color: #fff;
+  }
+  
+  .balao .seta {
+    position: absolute;
+    bottom: -2.7rem;
+    left: 3rem;
+    width: 3rem;
+    height: 3rem;
+    background: url(../img/seta_balao.png) center center/contain no-repeat;
+  }
+  
+  .balao .seta.cima {
+    position: absolute;
+    top: -2.7rem;
+    left: 3rem;
+    transform: scale(-1);
+  }
+  
+  .balao button.fechar {
+    position: absolute;
+    top: -1rem;
+    right: -1rem;
+    width: 4rem;
+    height: 4rem;
+    border: none;
+    cursor: pointer;
+    background: url(../img/btn_close.png) center center/contain;
+  }
+
+.content {
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    /* background-image: url(../57/img/bg.png); */
+    color: white;
+}
+
+.foco {
+    z-index: 1;
+    top: 42%;
+    left: 50%;
+    background-color: transparent;
+    width: 16em;
+    height: 16em;
+    border-radius: 50%;
+    border: 5px dashed white;
+    cursor: pointer;
+    display: none;
+}
+
+.s1 {
+    background-image: url(../../img/bg_portrait.png);
+}
+
+.s1 .p1 {
+    font-family: 'VivoTypeBold';
+    top: 25%;
+    left: 50%;
+    font-size: 92px;
+    text-align: center;
+    width: 70%;
+}
+
+.s1 .p2 {
+    font-family: 'VivoTypeLight';
+    top: 45%;
+    left: 50%;
+    font-size: 54px;
+    text-align: center;
+    width: 80%;
+}
+
+.s1 img {
+    cursor: pointer;
+    top: 90%;
+    left: 83%;
+    width: 16%;
+}
+
+.s2 {
+    background-image: url(img/26.png);
+}
+
+.s2 .hole {
+    left: 85%;
+    top: 93%;
+    width: 16em;
+    height: 16em;
+    border-radius: 50%;
+}
+
+.s2 .balao {
+    width: 50%;
+    top: 75%;
+    left: 72%;
+}
+
+.s2 .foco {
+    top: 93%;
+    left: 85%;
+    width: 12em;
+    height: 12em;
+    border-radius: 50%;
+    border: 5px dashed #609;
+}
+
+.s3 {
+    background-image: url(img/103.png);
+}
+
+.s3 .hole {
+    left: 50%;
+    top: 9%;
+    width: 41em;
+    height: 7em;
+    /* border-radius: 50%; */
+}
+
+.s3 .balao {
+    width: 50%;
+    top: 25%;
+    left: 70%;
+}
+
+.s3 .balao .seta {
+    top: -2.7rem;
+    transform: rotate(180deg);
+    bottom: 0px;
+}
+
+.s3 .foco {
+    border: 5px dashed #CC3D70;
+    top: 10%;
+    left: 43%;
+    border-radius: 0;
+    width: 36em;
+    height: 5em;
+}
+
+.s4 {
+    background-image: url(img/105.png);
+}
+
+.s4 .hole {
+    left: 50%;
+    top: 48%;
+    width: 42em;
+    height: 19em;
+}
+
+.s4 .balao {
+    width: 50%;
+    top: 75%;
+    left: 70%;
+}
+
+.s4 .balao .seta {
+    top: -2.7rem;
+    transform: rotate(180deg);
+    bottom: 0px;
+}
+
+.s4 .foco {
+    border: 5px dashed #CC3D70;
+    top: 48%;
+    left: 50%;
+    border-radius: 0;
+    width: 47em;
+    height: 20em;
+}
+
+.s5 {
+    background-image: url(img/105.png);
+}
+
+.s5 .hole {
+    left: 9%;
+    top: 4%;
+    width: 7em;
+    height: 7em;
+    border-radius: 50%;
+}
+
+.s5 .balao {
+    width: 50%;
+    top: 20%;
+    left: 36%;
+}
+
+.s5 .balao .seta {
+    top: -2.7rem;
+    transform: rotate(180deg);
+    bottom: 0px;
+}
+
+.s5 .foco {
+    left: 9%;
+    top: 4%;
+    width: 7em;
+    height: 7em;
+    border-radius: 0;
+    border: 5px dashed #CC3D70;
+}
+
+.s6 {
+    background-image: url(img/103.png);
+}
+
+.s6 .hole {
+    left: 50%;
+    top: 22.5%;
+    width: 41em;
+    height: 7em;
+}
+
+.s6 .balao {
+    width: 50%;
+    top: 39%;
+    left: 70%;
+}
+
+.s6 .balao .seta {
+    top: -2.7rem;
+    transform: rotate(180deg);
+    bottom: 0px;
+}
+
+.s6 .foco {
+    border: 5px dashed #CC3D70;
+    top: 22.5%;
+    left: 43%;
+    border-radius: 0;
+    width: 36em;
+    height: 5em;
+}
+
+.s7 {
+    background-image: url(img/107.png);
+}
+
+.s7 .foco {
+    top: 35%;
+    left: 50%;
+    width: 22em;
+    height: 22em;
+    border: 5px dashed #609;
+}
+
+.s8 {
+    background-image: url(img/107.png);
+}
+
+.s8 .hole {
+    left: 13%;
+    top: 3%;
+    width: 7em;
+    height: 7em;
+    border-radius: 50%;
+}
+
+.s8 .balao {
+    width: 50%;
+    top: 20%;
+    left: 36%;
+}
+
+.s8 .balao .seta {
+    top: -2.7rem;
+    transform: rotate(180deg);
+    bottom: 0px;
+}
+
+.s8 .foco {
+    left: 13%;
+    top: 3%;
+    width: 7em;
+    height: 7em;
+    border: 5px dashed #CC3D70;
+}
+
+
+.s9 {
+    background-image: url(img/103.png);
+}
+
+.s9 .hole {
+    left: 50%;
+    top: 29%;
+    width: 41em;
+    height: 7em;
+}
+
+.s9 .balao {
+    width: 50%;
+    top: 47%;
+    left: 70%;
+}
+
+.s9 .balao .seta {
+    top: -2.7rem;
+    transform: rotate(180deg);
+    bottom: 0px;
+}
+
+.s9 .foco {
+    border: 5px dashed #CC3D70;
+    top: 29%;
+    left: 43%;
+    border-radius: 0;
+    width: 36em;
+    height: 5em;
+}
+
+
+.s10 {
+    background-image: url(img/110.png);
+}
+
+.s10 .hole {
+    left: 13%;
+    top: 3%;
+    width: 7em;
+    height: 7em;
+    border-radius: 50%;
+}
+
+.s10 .balao {
+    width: 50%;
+    top: 20%;
+    left: 36%;
+}
+
+.s10 .balao .seta {
+    top: -2.7rem;
+    transform: rotate(180deg);
+    bottom: 0px;
+}
+
+.s10 .foco {
+    left: 13%;
+    top: 3%;
+    width: 7em;
+    height: 7em;
+    border: 5px dashed #CC3D70;
+}
+
+.s11 {
+    background-image: url(img/103.png);
+}
+
+.s11 .fechar {
+    top: -2rem !important;
+    right: -2rem !important;
+}
+
+.s11 .hole {
+    left: 50%;
+    top: 35.5%;
+    width: 41em;
+    height: 7em;
+}
+
+.s11 .balao {
+    width: 50%;
+    top: 54%;
+    left: 70%;
+}
+
+.s11 .balao .seta {
+    top: -2.7rem;
+    transform: rotate(180deg);
+    bottom: 0px;
+}
+
+.s11 .foco {
+    border: 5px dashed #CC3D70;
+    top: 35.5%;
+    left: 43%;
+    border-radius: 0;
+    width: 36em;
+    height: 5em;
+}
+
+.s12 {
+    background-image: url(img/113.png);
+}
+
+.s12 .fechar {
+    top: -2rem !important;
+    right: -2rem !important;
+}
+
+.s12 .hole {
+    left: 50%;
+    top: 64.5%;
+    width: 41em;
+    height: 7em;
+}
+
+.s12 .balao {
+    width: 50%;
+    top: 81%;
+    left: 70%;
+}
+
+.s12 .balao .seta {
+    top: -2.7rem;
+    transform: rotate(180deg);
+    bottom: 0px;
+}
+
+.s12 .foco {
+    border: 5px dashed #609;
+    top: 64.5%;
+    left: 50%;
+    border-radius: 0;
+    width: 36em;
+    height: 5em;
+}
+
+.s13 {
+    background-image: url(img/103.png);
+}
+
+.s13 .fechar {
+    top: -2rem !important;
+    right: -2rem !important;
+}
+
+.s13 .hole {
+    left: 50%;
+    top: 42%;
+    width: 41em;
+    height: 7em;
+}
+
+.s13 .balao {
+    width: 50%;
+    top: 59%;
+    left: 70%;
+}
+
+.s13 .balao .seta {
+    top: -2.7rem;
+    transform: rotate(180deg);
+    bottom: 0px;
+}
+
+.s13 .foco {
+    border: 5px dashed #CC3D70;
+    top: 42%;
+    left: 43%;
+    border-radius: 0;
+    width: 36em;
+    height: 5em;
+}
+
+.s14 {
+    background-image: url(img/115.png);
+}
+
+.s14 .foco {
+    top: 56.5%;
+    left: 66.5%;
+    width: 10em;
+    height: 10em;
+    border: 5px dashed #609;
+}
+
+.s15 {
+    background-image: url(img/116.png);
+}

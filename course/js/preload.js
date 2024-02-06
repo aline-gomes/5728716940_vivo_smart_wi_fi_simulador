@@ -111,17 +111,5 @@ function cancel_load() {
 
 var preload_list = [];
 function returnList() {
-    preload_list = [
-        "./img/bg_preload.png",
-        "./img/bg_landscape.png",
-        "./img/bg_portrait.png",
-        "./img/bt_avancar.png",
-        "./screens/0/img/bg.png",
-        "./screens/0/img/btn_bg.png",
-        "./screens/0/img/retranca.png",
-        "./screens/1/img/img_review.png",
-        "./screens/1/img/img_init_module.png",
-        "./screens/1/img/img_review_locked.png",
-        "./screens/1/img/img_init_module_locked.png"
-    ];
+    preload_list = [];
 }
