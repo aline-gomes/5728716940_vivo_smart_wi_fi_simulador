@@ -1,0 +1,142 @@
+.content {
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    color: white;
+}
+
+.foco {
+    width: 7rem;
+    height: 7rem;
+    cursor: pointer;
+    border-radius: 50%;
+    border: 5px dashed #609;
+    background-color: transparent;
+}
+
+.hole {
+    top: 13.3%;
+    left: 75.5%;
+    width: 37%;
+    height: 4%;
+}
+
+.balao button.fechar {
+    top: -1rem;
+    right: -1.5rem;
+}
+
+.balao {
+    top: 20%;
+    left: 65%;
+    width: 50%;
+}
+
+.balao .seta {
+    top: -2.7rem;
+    left: 9rem;
+    transform: scaleY(-1);
+}
+
+.s1 {
+    background-image: url(../../img/bg_portrait.png);
+}
+
+.s1 .p1 {
+    top: 25%;
+    left: 50%;
+    width: 95%;
+    font-size: 5rem;
+    text-align: center;
+    font-family: 'VivoTypeBold';
+}
+
+.s1 .p2 {
+    top: 43%;
+    left: 50%;
+    width: 86%;
+    font-size: 3.2rem;
+    text-align: center;
+    font-family: 'VivoTypeLight';
+}
+
+.s1 img {
+    top: 80%;
+    left: 83%;
+    width: 16%;
+    height: auto;
+    cursor: pointer;
+}
+
+.s2 {
+    background-image: url(img/print_1.png);
+}
+
+.s2 .hole {
+    top: 3.75%;
+    left: 89.5%;
+    width: 8%;
+    height: 5%;
+}
+
+.s2 .foco {
+    top: 3.6%;
+    left: 91%;
+    width: 5rem;
+    height: 5rem;
+    border: 5px dashed #fff;
+}
+
+.s3 {
+    background-image: url(img/print_2.png);
+}
+
+.s3 .balao {
+    top: 27%;
+}
+
+.s3 .foco {
+    top: 13.5%;
+    left: 76%;
+    border: 5px dashed #CC3D70;
+}
+
+.s4 {
+    background-image: url(img/print_3.png);
+}
+
+.s4 .hole {
+    top: 66.3%;
+    left: 71.8%;
+    width: 26%;
+}
+
+.s4 .balao {
+    top: 79.5%;
+    left: 66%;
+}
+
+.s4 .foco {
+    top: 66.2%;
+    left: 71.8%;
+    width: 11rem;
+    height: 11rem;
+    border: 5px dashed #CC3D70;
+}
+
+.s5 {
+    background-image: url(img/print_4.png);
+}
+
+.s5 .hole {
+    top: 3.2%;
+    left: 43%;
+    height: 6%;
+}
+
+.s5 .balao {
+    top: 19%;
+    left: 50%;
+}

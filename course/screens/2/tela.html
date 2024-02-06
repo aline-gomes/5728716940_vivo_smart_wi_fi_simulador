@@ -1,0 +1,106 @@
+<!-- Tela Css -->
+<link rel="stylesheet" href="./screens/2/geral.css">
+<link rel="stylesheet" href="./screens/2/tela.css">
+
+<!-- Tela Html -->
+<div class="abs divImg content">
+    <section class="s1">
+        <p class="anim">O app está disponível para Android e IOS. Para utilizá-lo, realize o seu download e instalação a
+            partir da Play Store ou App Store.</p>
+
+        <p class="anim">Em sua primeira utilização, siga o passo a passo apresentado.</p>
+
+        <button id="btn_vivinho" class="anim divImg" onclick="nextCard();"></button>
+    </section>
+
+    <section class="s2">
+        <img class="abs pulse" src="./screens/2/img/img_load_fake.png" alt="">
+    </section>
+
+    <section class="s3">
+        <div class="abs foco pulse" onclick="nextCard()"></div>
+    </section>
+
+    <section class="s4 slider">
+        <div class="abs foco pulse" onclick="nextCard()"></div>
+    </section>
+
+    <section class="s5 slider">
+        <div class="abs foco pulse" onclick="nextCard()"></div>
+    </section>
+
+    <section class="s6 slider">
+        <div class="abs foco pulse" onclick="nextCard()"></div>
+    </section>
+
+    <section class="s7">
+        <div class="abs foco pink pulse" onclick="nextCard()"></div>
+    </section>
+
+    <section class="s8"></section>
+
+    <section class="s9"></section>
+
+    <section class="s10">
+        <div class="abs foco pink pulse" onclick="nextCard(); hideInput();"></div>
+    </section>
+
+    <section class="s11">
+        <div class="abs foco pink pulse" onclick="nextCard();"></div>
+    </section>
+
+    <section class="s12"></section>
+
+    <section class="s13">
+        <div class="abs foco pink pulse" onclick="nextCard();"></div>
+    </section>
+
+    <section class="s14"></section>
+
+    <section class="s15">
+        <div class="abs foco pink pulse" onclick="nextCard(); hideInput();"></div>
+    </section>
+
+    <section class="s16">
+        <div class="abs foco pink pulse" onclick="nextCard();"></div>
+    </section>
+
+    <section class="s17"></section>
+
+    <section class="s18">
+        <div class="abs foco pink pulse" onclick="nextCard();"></div>
+    </section>
+
+    <section class="s19">
+        <div class="abs foco pink pulse" onclick="nextCard();"></div>
+    </section>
+
+    <section class="s20"></section>
+
+    <section class="s21">
+        <div class="abs foco pulse" onclick="nextCard(); openLastMask();"></div>
+    </section>
+
+    <section class="s22"></section>
+
+    <input type="text" class="user_number abs" maxlength="11" style="display: none;">
+
+    <div class="feedback fade_in">
+        <img src="./img/feed_neg.png" alt="">
+        <button class="fechar pulse2" onclick="closeFeedBack(this);"></button>
+    </div>
+
+    <div class="mascara_balao fade_in" style="display: none;">
+        <div class="hole abs"></div>
+
+        <div class="balao abs">
+            <p>Preencha o campo com<br>o número 00000000000.</p>
+            <div class="seta cima"></div>
+            <button class="fechar pulse2" onclick="closeBalao(this);"></button>
+        </div>
+    </div>
+</div>
+
+<!-- Tela Js -->
+<script src="./screens/2/tela.js"></script>
+<script>init()</script>

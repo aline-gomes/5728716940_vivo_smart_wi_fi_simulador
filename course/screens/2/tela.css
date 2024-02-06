@@ -1,0 +1,164 @@
+.s1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3.5rem;
+    background-image: url(../../img/bg_portrait.png);
+}
+
+.s1 p {
+    position: relative;
+    width: 85%;
+    text-align: left;
+    font-size: 2.2rem;
+    color: var(--white);
+    font-family: VivoTypeBold, Arial, Helvetica, sans-serif;
+}
+
+.s1 #btn_vivinho {
+    width: 19rem;
+    height: 19rem;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    margin-top: 4rem;
+    border-radius: 2rem;
+    animation: pulse_pink 1.5s infinite;
+    box-shadow: 0 0 0 0 rgba(235, 61, 125, 0.5);
+    background-image: url(../2/img/btn_vivinho.png);
+    filter: drop-shadow(0.3rem 0.3rem 1.2rem rgba(0, 0, 0, .5));
+}
+
+.s2 {
+    background-color: #79009d;
+}
+
+.s2 img {
+    top: 50%;
+    left: 50%;
+    width: 95%;
+    height: auto;
+}
+
+.s3 {
+    background-image: url(img/print_1.png);
+}
+
+.s3 .foco {
+    left: 85.2%;
+    width: 7.5rem;
+}
+
+.s4 {
+    background-image: url(img/print_2.png);
+}
+
+.s5 {
+    background-image: url(img/print_3.png);
+}
+
+.s6 {
+    background-image: url(img/print_4.png);
+}
+
+.s7 {
+    background-image: url(img/print_5.png);
+}
+
+.s7 .foco {
+    top: 91%;
+    left: 50.1%;
+}
+
+.s8 {
+    background-image: url(img/print_6.gif);
+}
+
+.s9 {
+    background-image: url(img/print_7.png);
+}
+
+.s10 {
+    background-image: url(img/print_8.png);
+}
+
+.s11 {
+    background-image: url(img/print_9.png);
+}
+
+.s11 .foco {
+    top: 43.8%;
+}
+
+.s12 {
+    background-image: url(img/print_10.png);
+}
+
+.s13 {
+    background-image: url(img/print_11.png);
+}
+
+.s13 .foco {
+    top: 38.5%;
+}
+
+.s14,
+.s15 {
+    background-image: url(img/print_12.png);
+}
+
+.s15 .foco {
+    top: 30.5%;
+}
+
+.s16 {
+    background-image: url(img/print_13.png);
+}
+
+.s16 .foco {
+    top: 87%;
+}
+
+.s17 {
+    background-image: url(img/print_14.png);
+}
+
+.s18 {
+    background-image: url(img/print_15.png);
+}
+
+.s18 .foco {
+    top: 91.5%;
+    left: 50.7%;
+}
+
+.s19 {
+    background-image: url(img/print_16.png);
+}
+
+.s19 .foco {
+    top: 87.5%;
+}
+
+.s20 {
+    background-image: url(img/print_17.gif);
+}
+
+.s21 {
+    background-image: url(img/print_18.png);
+}
+
+.s21 .foco {
+    top: 42%;
+    left: 50.2%;
+    width: 15rem;
+    height: 15rem;
+    border-radius: 8rem;
+    border: 5px dashed #fff;
+}
+
+.s22 {
+    filter: brightness(0.5);
+    background-image: url(img/print_18.png);
+}

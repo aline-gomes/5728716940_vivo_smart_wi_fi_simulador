@@ -1,0 +1,33 @@
+.content {
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-image: url(../82/img/bg.png);
+}
+
+.balao.b0 {
+    width: 50%;
+    top: 79%;
+    left: 69%;
+}
+
+.balao.b0 .seta {
+    left: 6.5rem;
+}
+
+.hole {
+    left: 62%;
+    top: 93%;
+    width: 17.5%;
+    height: 9%;
+}
+
+.destaque.d0 {
+    display: none;
+    left: 62%;
+    top: 93%;
+    width: 17.5%;
+    height: 9%;
+}

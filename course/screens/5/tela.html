@@ -1,0 +1,89 @@
+<!-- Tela Css -->
+<link rel="stylesheet" href="./screens/5/tela.css">
+
+<!-- Tela Html -->
+<div class="abs content">
+    <section class="s1">
+        <p class="abs p1">Desbloqueando dispositivos</p>
+        <p class="abs p2">Vamos ver o procedimento para desbloquear dispositivos.</p>
+        <img src="./img/bt_avancar.png" alt="" class="pulse abs" onclick="nextCard()">
+    </section>
+
+    <section class="s2">
+        <div class="hole abs"></div>
+
+        <div class="balao abs">
+            <p>Na tela inicial do app<br> clique em “Ver todos”.</p>
+
+            <div class="seta"></div>
+            <button class="pulse2 fechar" onclick="closeBalao(this)"></button>
+        </div>
+
+        <div class="abs foco pulse" onclick="nextCard()" style="display: none;"></div>
+    </section>
+
+    <section class="s3">
+        <div class="hole abs"></div>
+
+        <div class="balao abs">
+            <p>Deslize pelo menu<br> horizontal até encontrar<br> a guia “Bloqueados”.</p>
+
+            <div class="seta"></div>
+            <button class="pulse2 fechar" onclick="closeBalao(this); nextCard();"></button>
+        </div>
+    </section>
+
+    <section class="s4">
+        <div class="hole abs"></div>
+
+        <div class="balao abs">
+            <p>Clique sobre ela.</p>
+
+            <div class="seta"></div>
+            <button class="pulse2 fechar" onclick="closeBalao(this)"></button>
+        </div>
+
+        <div class="abs foco pulse" onclick="nextCard()" style="display: none;"></div>
+    </section>
+
+    <section class="s5">
+        <div class="hole abs"></div>
+
+        <div class="balao abs">
+            <p>Em seguida, selecione o dispositivo a ser desbloqueado.</p>
+
+            <div class="seta"></div>
+            <button class="pulse2 fechar" onclick="closeBalao(this)"></button>
+        </div>
+
+        <div class="abs foco pulse" onclick="nextCard()" style="display: none;"></div>
+    </section>
+
+    <section class="s6">
+        <div class="hole abs"></div>
+
+        <div class="balao abs">
+            <p>Pressione o botão “Desbloquear dispositivo”.</p>
+
+            <div class="seta"></div>
+            <button class="pulse2 fechar" onclick="closeBalao(this)"></button>
+        </div>
+
+        <div class="abs foco pulse" onclick="nextCard()" style="display: none;"></div>
+    </section>
+
+    <section class="s7">
+        <div class="hole abs"></div>
+
+        <div class="balao abs">
+            <p>É isso aí! O dispositivo<br> foi desbloqueado.</p>
+
+            <div class="seta"></div>
+            <button class="pulse2 fechar" onclick="closeBalao(this); nextCard();"></button>
+        </div>
+    </section>
+</div>
+
+<!-- Tela Js -->
+<script src="./screens/5/tela.js"></script>
+<script>init()</script>

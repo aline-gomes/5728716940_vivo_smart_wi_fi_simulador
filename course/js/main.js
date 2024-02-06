@@ -1,11 +1,8 @@
-//#region Configs
 //Numero de telas
 var n_telas = 1;
-//Tela inicial 0
-var c_screen = 57;
+var c_screen = 58;
 
 const container = $("#loaded_content");
-//#endregion
 
 async function init() {
   try {
