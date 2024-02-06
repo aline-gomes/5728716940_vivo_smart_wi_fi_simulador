@@ -2,7 +2,7 @@
 //Numero de telas
 var n_telas = 1;
 //Tela inicial 0
-var c_screen = 57;
+var c_screen = 203;
 
 const container = $("#loaded_content");
 //#endregion
@@ -42,7 +42,7 @@ var screen = {
       screen.lock = true;
       c_screen++;
       screen.goto();
-      hud.block_nav();
+      // hud.block_nav();
     }
   },
   back: () => {

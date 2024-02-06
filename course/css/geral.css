@@ -107,7 +107,7 @@ button#btn_arrow {
   text-align: center;
   font-family: VivoTypeRegular;
   font-size: 1.5rem;
-  line-height: 1.8rem;
+  line-height: 1.5rem;
   padding: 1.5rem;
   color: #fff;
 }
@@ -128,20 +128,15 @@ button#btn_arrow {
   transform: scale(-1);
 }
 
-.balao .seta.cima.direita {
-  position: absolute;
-  left: 17rem;
-}
-
 .balao button.fechar {
-    position: absolute;
-    top: 0rem;
-    right: -4rem;
-    width: 4rem;
-    height: 4rem;
-    border: none;
-    cursor: pointer;
-    background: url(../img/btn_close.png) center center/contain;
+  position: absolute;
+  top: -1rem;
+  right: -1rem;
+  width: 4rem;
+  height: 4rem;
+  border: none;
+  cursor: pointer;
+  background: url(../img/btn_close.png) center center/contain;
 }
 
 /* DESTAQUE */
