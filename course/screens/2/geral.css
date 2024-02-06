@@ -58,9 +58,9 @@ input[type="text"] {
 }
 
 .balao {
-    width: 50%;
     top: 56%;
     left: 54%;
+    width: 50%;
 }
 
 /* FEEDBACK */

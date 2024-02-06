@@ -39,28 +39,31 @@
 .capas .p1 {
     top: 25%;
     left: 50%;
-    font-size: 92px;
     width: 95%;
+    font-size: 5rem;
     text-align: center;
     font-family: 'VivoTypeBold';
 }
 
 .capas .p2 {
-    top: 45%;
+    top: 43%;
     left: 50%;
     width: 80%;
-    font-size: 54px;
-    margin-top: 2rem;
+    font-size: 3.2rem;
     text-align: center;
     font-family: 'VivoTypeLight';
 }
 
+.capas.s7 .p2 {
+    top: 47%;
+}
+
 .capas img {
-    cursor: pointer;
     top: 80%;
     left: 83%;
     width: 16%;
     height: auto;
+    cursor: pointer;
 }
 
 /* FIM TELAS PRINCIPAIS */
@@ -188,6 +191,5 @@
 
 .s9 .foco {
     top: 91.5%;
-    left: 50%;
     border: 5px dashed #CC3D70;
 }
