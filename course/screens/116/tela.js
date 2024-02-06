@@ -1,5 +1,5 @@
 //Para abrir em outro card só trocar o t
-var t = 13,
+var t = 0,
     telas = 0
 
 function init() {
