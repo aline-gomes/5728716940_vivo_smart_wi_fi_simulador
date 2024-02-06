@@ -1,0 +1,39 @@
+<!-- Tela Css -->
+<link rel="stylesheet" href="./screens/2/tela.css">
+
+<!-- Tela Html -->
+<div class="abs divImg content">
+    <p class="anim">O app está disponível para Android e IOS. Para utilizá-lo, realize o seu download e instalação a
+        partir da Play Store ou App Store.</p>
+
+    <p class="anim">Em sua primeira utilização, siga o passo a passo apresentado.</p>
+
+    <button id="btn_vivinho" class="anim divImg" onclick="showLoadFake(this);"></button>
+
+    <div class="load_fake" style="display: none;">
+        <img src="./screens/2/img/img_load_fake.png" alt="">
+    </div>
+
+    <div class="feedback fade_in">
+        <img src="./img/feed_neg.png" alt="">
+        <button class="fechar pulse2" onclick="closeFeedBack(this);"></button>
+    </div>
+
+    <div class="mascara_balao fade_in" style="display: none;">
+        <div class="hole abs"></div>
+        <div class="balao b0 abs">
+            <p>Preencha o campo com<br>o número 00000000000.</p>
+            <div class="seta cima"></div>
+            <button class="fechar pulse2" onclick="closeBalao(this);"></button>
+        </div>
+    </div>
+
+    <section class="abs divImg prints_modulo_1">
+        <input type="text" class="user_number abs" value="Number" maxlength="11">
+        <div class="destaque abs pulse" onclick="nextCard();"></div>
+    </section>
+</div>
+
+<!-- Tela Js -->
+<script src="./screens/2/tela.js"></script>
+<script>init()</script>
