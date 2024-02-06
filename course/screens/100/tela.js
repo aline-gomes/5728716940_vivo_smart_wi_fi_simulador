@@ -1,26 +1,30 @@
-//Para abrir em outro card só trocar o t
-var t = 1, 
-telas = 0
-
 function init() {
-    telas = document.querySelectorAll('section')
-    telas.forEach((e, index) => {
-        if (index == t)
-            return
-        e.style.display = 'none'
-    })
-}
+  // refers
+  let mascara = document.querySelector(".mascara_balao");
+  let balao = document.querySelector(".balao.b0");
+  let btFecharBalao = document.querySelector(".balao button.fechar");
 
-function nextCard() {
-    if ((t + 1) == telas.length){
-        console.log('aqui acaba')
-        return
-    }
-    telas[t].style.display = 'none'
-    t++
-    telas[t].style.display = 'block'
-}
+  let destaque = document.querySelector(".destaque.d0");
 
-function closeBalao(e){
-    e.parentElement.parentElement.removeChild(e.parentElement)
+  // balloon events
+  let showDestaque = _ => {
+    destaque.style.display = "block";
+
+    setTimeout(() => {
+      screen.next();
+    }, 2000);
+  }
+
+  let handleCloseBalloon = (e) => {
+    e.target.parentNode.style.display = "none";
+    mascara.style.display = "none";
+
+    showDestaque();
+  }
+  btFecharBalao.addEventListener("click", handleCloseBalloon);
+
+  // Animation
+  let tl = new gsap.timeline();
+  tl.fromTo(mascara, .8, { opacity: 0 }, { opacity: 1, delay: .5 });
+  tl.fromTo(balao, .8, { opacity: 0 }, { opacity: 1 });
 }
