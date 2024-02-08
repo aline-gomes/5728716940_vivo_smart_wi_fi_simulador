@@ -20,10 +20,10 @@
     height: 9%;
 }
 
-.destaque.d0 {
-    display: none;
-    left: 38%;
-    top: 93%;
-    width: 17.5%;
-    height: 9%;
+.foco {
+    top: 93.1%;
+    left: 38.5%;
+    width: 3.8rem;
+    height: 5rem;
+    background-image: url(../../img/btn_print_icone_perfis.png);
 }

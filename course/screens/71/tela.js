@@ -7,7 +7,7 @@ function init() {
   let balao = document.querySelector(".balao.b0");
   let btFecharBalao = document.querySelector(".balao button.fechar");
 
-  let destaques = document.querySelectorAll(".destaque");
+  let destaque = document.querySelector(".foco");
 
   let inputField = document.querySelector("input.nome");
 
@@ -17,7 +17,7 @@ function init() {
   // on first focus...
   inputField.addEventListener("focus", e => {
     e.target.value = "";
-    destaques[0].style.display = "none";
+    e.target.className = "nome abs"
   })
 
   // on leaving field...
@@ -29,21 +29,14 @@ function init() {
   inputField.addEventListener("input", e => {
     if (e.target.value.length >= validString.length) {
       // enable pulse for avatar sel.
-      destaques[1].style.display = "block";
+      destaque.className = "divImg foco pulse"
     }
   })
-
-  // balloon events
-  let showDestaque = (dest) => {
-    destaques[dest].style.display = "block";
-  }
 
   // close balloon event
   let handleCloseBalloon = (e) => {
     e.target.parentNode.style.display = "none";
     mascara.style.display = "none";
-
-    showDestaque(0);
   }
   btFecharBalao.addEventListener("click", handleCloseBalloon);
 
@@ -67,14 +60,13 @@ function init() {
       feedNeg.style.display = "flex";
     }
   }
-  destaques[1].addEventListener("click", handleAvancar);
+  destaque.addEventListener("click", handleAvancar);
 
   // feedback events
   let handleCloseFeed = (e) => {
     // Close feed, clean input + hide destaque[1] 
     e.target.parentNode.style.display = "none";
     inputField.value = "";
-    destaques[1].style.display = "none";
   }
   btFecharFeed.addEventListener("click", handleCloseFeed);
 

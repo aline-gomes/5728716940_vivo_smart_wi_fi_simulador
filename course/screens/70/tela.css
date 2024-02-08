@@ -14,16 +14,15 @@
 }
 
 .hole {
-    left: 49%;
-    top: 64.6%;
+    top: 64.72%;
+    left: 49.1%;
     width: 36%;
     height: 7.5%;
 }
 
-.destaque.d0 {
-    display: none;
-    left: 49%;
+.foco {
     top: 64.7%;
-    width: 39%;
-    height: 8%;
+    left: 49.1%;
+    width: 16.1rem;
+    background-image: url(../../img/btn_print_criar_perfil.png);
 }
