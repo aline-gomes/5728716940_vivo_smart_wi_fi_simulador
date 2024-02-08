@@ -20,10 +20,10 @@
     height: 9%;
 }
 
-.destaque.d0 {
-    display: none;
-    left: 45%;
-    top: 22%;
-    width: 70%;
-    height: 9%;
+.foco {
+    top: 22.05%;
+    left: 43.5%;
+    width: 32rem;
+    height: 8rem;
+    background-image: url(../../img/btn_print_horarios_desconexao.png);
 }
