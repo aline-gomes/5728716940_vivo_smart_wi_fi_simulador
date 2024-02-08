@@ -20,33 +20,31 @@
     height: 8%;
 }
 
-.destaque.d0 {
-    opacity: 0;
-    pointer-events: none;
-    left: 50%;
-    top: 31%;
-    width: 88%;
-    height: 37%;
+.foco.f0 {
+    top: 26.8%;
+    left: 49.7%;
+    width: 42rem;
+    height: 35rem;
+    background-image: url(img/btn_print_perfil_preenchido.png);
 }
 
-.destaque.d1 {
-    display: none;
-    left: 50%;
+.foco.f1 {
     top: 91.3%;
-    width: 80%;
-    height: 8%;
+    width: 35.5rem;
+    background-image: url(../../img/btn_print_proximo.png);
 }
 
 input[type="text"] {
-    top: 18%;
-    left: 50%;
-    width: 83%;
-    font-family: 'VivoTypeRegular';
-    font-size: 1.9rem;
-    color: #cbcbcb;
-    padding: .5rem;
+    top: 18.5%;
+    left: 50.1%;
+    width: 39rem;
     border: none;
-    pointer-events: none;
+    z-index: 3;
+    padding: .5rem;
+    color: #cbcbcb;
+    font-size: 1.9rem;
+    font-family: 'VivoTypeRegular';
+    border-bottom: 0.2rem solid #cbcbcb;
 }
 
 .feedback {
