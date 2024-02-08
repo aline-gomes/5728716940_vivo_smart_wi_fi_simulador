@@ -20,56 +20,51 @@
     height: 39%;
 }
 
-.destaque.d0 {
-    display: none;
+.foco {
+    touch-action: none;
     pointer-events: none;
-    left: 50%;
-    top: 22%;
-    width: 88%;
-    height: 7%;
 }
 
-.destaque.d1 {
-    display: none;
-    left: 50%;
-    top: 40%;
-    width: 89%;
-    height: 21%;
+.foco.f0 {
+    top: 40.2%;
+    left: 41.7%;
+    width: 33.7rem;
+    height: 14rem;
+    background-image: url(img/btn_print_horario.png);
 }
 
-.destaque.d2 {
-    display: none;
-    left: 50%;
-    top: 62.5%;
-    width: 89%;
-    height: 15%;
+.foco.f1 {
+    top: 62.7%;
+    left: 44.15%;
+    width: 36.8rem;
+    height: 11rem;
+    background-image: url(img/btn_print_semana.png);
 }
 
-.destaque.d3 {
-    display: none;
-    left: 50%;
-    top: 79.5%;
-    width: 89%;
-    height: 14%;
+.foco.f2 {
+    top: 79.7%;
+    width: 42rem;
+    height: 12rem;
+    background-image: url(img/btn_print_aviso.png);
 }
 
-.destaque.d4 {
-    display: none;
-    left: 49.5%;
+.foco.f3 {
     top: 91.3%;
-    width: 80.5%;
-    height: 8%;
+    width: 34.3rem;
+    height: 6rem;
+    background-image: url(img/btn_print_salvar.png);
 }
 
 input[type="text"] {
     top: 21.5%;
-    left: 49%;
-    width: 83%;
-    font-family: 'VivoTypeRegular';
-    font-size: 2.4rem;
-    color: #1f1f1f;
-    padding: .2rem;
+    left: 50%;
+    width: 42rem;
     border: none;
+    padding: 0.5rem;
+    color: #1f1f1f;
+    font-size: 1.9rem;
+    font-family: 'VivoTypeRegular';
+    border-bottom: 0.2rem solid #cbcbcb;
 }
 
 .feedback {
@@ -79,6 +74,7 @@ input[type="text"] {
     position: absolute;
     top: 0;
     left: 0;
+    z-index: 4;
     width: 100%;
     height: 100%;
     background: rgba(44, 5, 59, .95);

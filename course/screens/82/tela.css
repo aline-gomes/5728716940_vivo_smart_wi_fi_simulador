@@ -24,10 +24,9 @@
     height: 9%;
 }
 
-.destaque.d0 {
-    display: none;
-    left: 62%;
+.foco {
     top: 93%;
-    width: 17.5%;
-    height: 9%;
+    left: 62.1%;
+    width: 8.5rem;
+    background-image: url(img/btn_print_rede.png);
 }
