@@ -7,17 +7,6 @@
     color: white;
 }
 
-.foco {
-    top: 42%;
-    left: 50%;
-    width: 7rem;
-    height: 7rem;
-    cursor: pointer;
-    border-radius: 50%;
-    border: 5px dashed #609;
-    background-color: transparent;
-}
-
 .hole {
     top: 9.4%;
     left: 50%;
@@ -91,8 +80,10 @@
 
 .s2 .foco {
     top: 79.8%;
-    left: 13.1%;
-    border: 5px dashed #fff;
+    left: 13.2%;
+    width: 5.4rem;
+    height: 5rem;
+    background-image: url(../../img/btn_print_icone_todos.png);
 }
 
 .s3 {
@@ -103,12 +94,6 @@
     top: 27%;
     left: 65%;
     width: 50%;
-}
-
-.s3 .foco {
-    top: 13.5%;
-    left: 76%;
-    border: 5px dashed #CC3D70;
 }
 
 .s4 {
@@ -122,15 +107,15 @@
 }
 
 .s4 .foco {
-    top: 9.5%;
-    left: 79.8%;
-    width: 11rem;
-    height: 11rem;
-    border: 5px dashed #CC3D70;
+    top: 9.4%;
+    left: 79.95%;
+    width: 9.3rem;
+    height: 3rem;
+    background-image: url(../../img/btn_print_bloqueados_white.png);
 }
 
 .s5 {
-    background-image: url(img/print_3.png);
+    background-image: url(img/print_4.png);
 }
 
 .s5 .hole {
@@ -146,13 +131,14 @@
 
 .s5 .foco {
     top: 23.6%;
-    left: 80%;
-    width: 13rem;
-    height: 13rem;
+    left: 49.8%;
+    width: 42rem;
+    height: 8rem;
+    background-image: url(../../img/btn_print_cleber_seta.png);
 }
 
 .s6 {
-    background-image: url(img/print_4.png);
+    background-image: url(img/print_5.png);
 }
 
 .s6 .hole {
@@ -166,13 +152,13 @@
 
 .s6 .foco {
     top: 75%;
-    width: 27rem;
-    height: 5rem;
-    border-radius: unset;
+    left: 50.2%;
+    width: 20.9rem;
+    background-image: url(../../img/btn_print_desbloquear_dispositivo.png);
 }
 
 .s7 {
-    background-image: url(img/print_5.png);
+    background-image: url(img/print_6.png);
 }
 
 .s7 .hole {
