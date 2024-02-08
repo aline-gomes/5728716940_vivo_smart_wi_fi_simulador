@@ -20,19 +20,20 @@
     height: 8%;
 }
 
-.destaque.d0 {
-    left: 44%;
-    top: 12%;
-    width: 40%;
-    height: 4%;
-    border-color: #fff;
+.foco {
     cursor: default;
 }
 
-.destaque.d1 {
-    display: none;
-    left: 50%;
-    top: 91.3%;
-    width: 88%;
-    height: 8%;
+.foco.f0 {
+    top: 12%;
+    left: 43.9%;
+    width: 16.5rem;
+    height: 3rem;
+    background-image: url(../../img/btn_print_conexao_pausada.png);
+}
+
+.foco.f1 {
+    top: 91.4%;
+    width: 36.5rem;
+    background-image: url(../../img/btn_print_retomar_conexao.png);
 }

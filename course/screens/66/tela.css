@@ -7,11 +7,11 @@
     background-image: url(../66/img/bg.png);
 }
 
-.destaque.d0 {
-    left: 50%;
-    top: 58%;
-    width: 86%;
-    height: 83%;
+.foco {
+    top: 58.5%;
+    width: 42rem;
+    height: 71rem;
+    background-image: url(../../img/btn_dispositivos_todos.png);
 }
 
 #btn_arrow {
@@ -21,5 +21,6 @@
     left: 84%;
     width: 7rem;
     height: 7rem;
+    z-index: 3;
     background-image: url(../../img/bt_avancar.png);
 }

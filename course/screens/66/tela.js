@@ -1,11 +1,11 @@
 function init() {
   // refers
-  let destaque = document.querySelector(".destaque.d0");
+  let destaque = document.querySelector(".foco");
   let btnArrow = document.querySelector("#btn_arrow");
 
   // balloon events
   let showAvancar = (e) => {
-    gsap.to(destaque, .8, { opacity: 0 });
+    destaque.classList.remove('pulse')
     gsap.to(btnArrow, .8, { display: "block", opacity: 1 });
   }
   destaque.addEventListener("click", showAvancar);
