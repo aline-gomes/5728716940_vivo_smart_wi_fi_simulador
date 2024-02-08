@@ -38,6 +38,8 @@ function nextCard() {
 
 user_number.addEventListener("focus", e => {
     e.target.value = "";
+    user_number.style.animation = 'none'
+    document.querySelector('.input-wrapper').style.animation = 'none'
 })
 
 var inputResp = ['00000000000', '000000', '123456'];
@@ -57,7 +59,11 @@ function onInput(index, max_length) {
             user_number.classList.add('lock')
 
             if (t == 11) {
-                setTimeout(() => { hideInput(); nextCard(); }, 200);
+                setTimeout(() => {
+                    document.querySelector('.input-wrapper').style.display = 'none'
+                    hideInput();
+                    nextCard();
+                }, 200);
                 return;
             }
             nextCard();
@@ -76,20 +82,21 @@ var showInputs = _ => {
 
     switch (true) {
         case (t == 8):
-            user_number.style.cssText = 'display: block; border: 5px dashed #609;'
+            user_number.style.cssText = 'display: block;'
             pop_text.innerHTML = '<p>Preencha o campo com<br>o número 00000000000.</p>'
             user_number.oninput = () => { onInput(0, 11); };
             break;
 
         case (t == 11):
             user_number.value = '';
-            user_number.style.cssText = 'display: block; border: 5px dashed #609; top: 26%; left: 51.3%; width: 27rem; padding: 0.5rem; letter-spacing: 3.8rem;'
+            document.querySelector('.input-wrapper').style.display = 'block'
+            user_number.style.cssText = 'display: block; border: none; top: 27%; left: 51.3%; width: 27rem; padding: 0; letter-spacing: 3.8rem;'
             pop_text.innerHTML = '<p>Preencha o campo com<br>o número 000000.</p>'
             user_number.oninput = () => { onInput(1, 6); };
             break;
 
         case (t == 13):
-            user_number.style.cssText = 'display: block; border: 5px dashed #609; top: 20%; padding: 0;'
+            user_number.style.cssText = 'display: block; top: 20%; padding: 0;'
             pop_text.innerHTML = '<p>Preencha o campo com<br>o número 123456.</p>'
             user_number.oninput = () => { onInput(2, 6); };
             break;
@@ -115,10 +122,7 @@ function openLastMask() {
 }
 
 function closeBalao(element) {
-    if (t == 8 || t == 11 || t == 13) {
-        user_number.classList.remove('lock');
-        user_number.style.border = 'none'
-    }
+    if (t == 8 || t == 11 || t == 13) user_number.classList.remove('lock');
     element.parentElement.parentElement.style.cssText = 'display: none;'
 }
 

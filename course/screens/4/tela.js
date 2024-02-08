@@ -32,5 +32,5 @@ function closeBalao(e) {
     hole.parentNode.removeChild(hole)
     e.parentElement.parentElement.removeChild(e.parentElement)
 
-    if (document.body.contains(destaque)) destaque.style.display = 'block';
+    if (document.body.contains(destaque)) destaque.classList.add('pulse')
 }

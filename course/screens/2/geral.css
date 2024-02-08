@@ -15,39 +15,57 @@ input.lock {
 }
 
 .foco {
-    top: 96.3%;
-    height: 5rem;
-    z-index: 2;
-    cursor: pointer;
-    border: 5px dashed #609;
+    top: 34.2%;
+    background-image: url(../../img/btn_print_continuar_purple.png);
 }
 
 .slider .foco {
-    left: 84.2%;
-    width: 8rem;
+    top: 96.3%;
+    left: 84%;
+    width: 7rem;
+    height: 3rem;
+    background-image: url(../../img/btn_print_proximo.png);
 }
 
-.foco.pink {
-    top: 34.2%;
-    left: 50.35%;
-    width: 9rem;
-    height: 9rem;
-    border-radius: 7rem;
-    border: 5px dashed #CC3D70;
+input[type="text"],
+.input-wrapper {
+    border: none;
+    height: 3rem;
+    color: #cbcbcb;
+    overflow: hidden;
+    text-align: left;
+    font-size: 1.9rem;
+    font-family: VivoTypeRegular;
+    background-color: transparent;
+    animation: pulse 1.5s infinite;
 }
 
 input[type="text"] {
-    top: 23%;
+    top: 23.8%;
     left: 50.1%;
     width: 39rem;
-    height: 3rem;
-    border: none;
-    z-index: 20;
-    color: #cbcbcb;
-    font-size: 1.9rem;
-    padding: 0.5rem 1rem;
-    font-family: VivoTypeRegular;
-    background-color: transparent;
+    z-index: 3;
+    border-bottom: 0.2rem solid #b388b4;
+}
+
+.input-wrapper {
+    top: 27%;
+    left: 51.3%;
+    width: 27rem;
+    z-index: 1;
+    padding: 0;
+    user-select: none;
+    letter-spacing: 3.8rem;
+}
+
+.input-wrapper:after {
+    content: "————————————";
+    display: inline-block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    line-height: 1rem;
 }
 
 .hole {

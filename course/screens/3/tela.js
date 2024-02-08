@@ -25,8 +25,8 @@ function nextCard() {
 
     if (t == 7) {
         setTimeout(() => {
-            document.querySelector('#foco_1').remove()
-            document.querySelector('#foco_2').style.display = 'block'
+            document.querySelector('#foco_1').classList.remove('pulse')
+            document.querySelector('#foco_2').classList.add('pulse')
         }, 3000);
     }
 }
@@ -38,5 +38,5 @@ function closeBalao(e) {
     hole.parentNode.removeChild(hole)
     e.parentElement.parentElement.removeChild(e.parentElement)
 
-    destaque.style.display = 'block'
+    destaque.classList.add('pulse')
 }

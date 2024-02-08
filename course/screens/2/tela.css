@@ -45,11 +45,6 @@
     background-image: url(img/print_1.png);
 }
 
-.s3 .foco {
-    left: 85.2%;
-    width: 7.5rem;
-}
-
 .s4 {
     background-image: url(img/print_2.png);
 }
@@ -69,6 +64,7 @@
 .s7 .foco {
     top: 91%;
     left: 50.1%;
+    background-image: url(../../img/btn_print_comecar.png);
 }
 
 .s8 {
@@ -100,12 +96,19 @@
 }
 
 .s13 .foco {
+    background-image: url(../../img/btn_print_continuar_white.png);
+}
+
+.s13 .foco {
     top: 38.5%;
 }
 
-.s14,
-.s15 {
+.s14 {
     background-image: url(img/print_12.png);
+}
+
+.s15 {
+    background-image: url(img/print_13.png);
 }
 
 .s15 .foco {
@@ -113,36 +116,39 @@
 }
 
 .s16 {
-    background-image: url(img/print_13.png);
+    background-image: url(img/print_14.png);
 }
 
 .s16 .foco {
     top: 87%;
+    background-image: url(../../img/btn_print_salvar_dados.png);
 }
 
 .s17 {
-    background-image: url(img/print_14.png);
+    background-image: url(img/print_15.png);
 }
 
 .s18 {
-    background-image: url(img/print_15.png);
+    background-image: url(img/print_16.png);
 }
 
 .s18 .foco {
     top: 91.5%;
-    left: 50.7%;
+    background-image: url(../../img/btn_print_ok.png);
 }
 
 .s19 {
-    background-image: url(img/print_16.png);
+    background-image: url(img/print_17.png);
 }
 
 .s19 .foco {
-    top: 87.5%;
+    top: 87.2%;
+    height: 2rem;
+    background-image: url(../../img/btn_print_permitir.png);
 }
 
 .s20 {
-    background-image: url(img/print_17.gif);
+    background-image: url(img/print_18.gif);
 }
 
 .s21 {
@@ -150,15 +156,14 @@
 }
 
 .s21 .foco {
-    top: 42%;
-    left: 50.2%;
-    width: 15rem;
-    height: 15rem;
-    border-radius: 8rem;
-    border: 5px dashed #fff;
+    top: 43%;
+    left: 50.3%;
+    width: 12.6rem;
+    height: 12.6rem;
+    background-image: url(../../img/btn_print_roteador.png);
 }
 
 .s22 {
     filter: brightness(0.5);
-    background-image: url(img/print_18.png);
+    background-image: url(img/print_19.png);
 }

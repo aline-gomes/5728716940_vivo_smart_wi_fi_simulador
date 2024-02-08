@@ -7,15 +7,6 @@
     color: white;
 }
 
-.foco {
-    width: 7rem;
-    height: 7rem;
-    cursor: pointer;
-    border-radius: 50%;
-    border: 5px dashed #609;
-    background-color: transparent;
-}
-
 .hole {
     top: 13.3%;
     left: 75.5%;
@@ -82,11 +73,11 @@
 }
 
 .s2 .foco {
-    top: 3.6%;
+    top: 3.7%;
     left: 91%;
-    width: 5rem;
-    height: 5rem;
-    border: 5px dashed #fff;
+    width: 1rem;
+    height: 2.3rem;
+    background-image: url(../../img/btn_print_menu.png);
 }
 
 .s3 {
@@ -98,9 +89,10 @@
 }
 
 .s3 .foco {
-    top: 13.5%;
-    left: 76%;
-    border: 5px dashed #CC3D70;
+    top: 13.3%;
+    left: 75.5%;
+    width: 15.05rem;
+    background-image: url(../../img/btn_print_bloquear_dispositivo.png);
 }
 
 .s4 {
@@ -119,11 +111,11 @@
 }
 
 .s4 .foco {
-    top: 66.2%;
+    top: 66.35%;
     left: 71.8%;
-    width: 11rem;
-    height: 11rem;
-    border: 5px dashed #CC3D70;
+    width: 9.3rem;
+    height: 4rem;
+    background-image: url(../../img/btn_print_bloquear.png);
 }
 
 .s5 {

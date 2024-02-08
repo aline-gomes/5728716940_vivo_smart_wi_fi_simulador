@@ -7,17 +7,6 @@
     color: white;
 }
 
-.foco {
-    top: 42%;
-    left: 50%;
-    width: 13rem;
-    height: 13rem;
-    cursor: pointer;
-    border-radius: 50%;
-    border: 5px dashed #609;
-    background-color: transparent;
-}
-
 .hole {
     top: 3.75%;
     left: 89.5%;
@@ -91,9 +80,11 @@
 }
 
 .s2 .foco {
-    top: 19.5%;
-    left: 62.5%;
-    border: 5px dashed #fff;
+    top: 19.2%;
+    left: 62.4%;
+    width: 9rem;
+    height: 8rem;
+    background-image: url(../../img/btn_print_celulares.png);
 }
 
 .s4 {
@@ -101,8 +92,10 @@
 }
 
 .s4 .foco {
-    top: 45.9%;
-    left: 80%;
+    top: 45.2%;
+    width: 42rem;
+    height: 9rem;
+    background-image: url(../../img/btn_print_cleber.png);
 }
 
 .s5 {
@@ -120,11 +113,11 @@
 }
 
 .s5 .foco {
-    top: 3.6%;
+    top: 3.7%;
     left: 91%;
-    width: 5rem;
-    height: 5rem;
-    border: 5px dashed #fff;
+    width: 1rem;
+    height: 2.3rem;
+    background-image: url(../../img/btn_print_menu.png);
 }
 
 .s6 {
@@ -144,11 +137,11 @@
 }
 
 .s6 .foco {
-    top: 8%;
-    left: 64%;
-    width: 7rem;
-    height: 7rem;
-    border: 5px dashed #CC3D70;
+    top: 8.15%;
+    left: 64.4%;
+    width: 4.3rem;
+    height: 2rem;
+    background-image: url(../../img/btn_print_editar.png);
 }
 
 .s8 {
@@ -156,20 +149,21 @@
 }
 
 .s8 #foco_1 {
-    top: 41.2%;
-    left: 23%;
+    top: 41.3%;
+    left: 18%;
+    width: 6rem;
     height: 3.5rem;
-    border-radius: unset;
     pointer-events: none;
     touch-action: none;
+    background-image: url(../../img/btn_print_cleber_name.png);
 }
 
 .s8 #foco_2 {
-    top: 54%;
-    left: 24%;
-    width: 14rem;
-    height: 6rem;
-    border-radius: unset;
+    top: 53.95%;
+    left: 22.1%;
+    width: 10.4rem;
+    height: 4rem;
+    background-image: url(../../img/btn_print_check_celular.png);
 }
 
 .s9 {
@@ -196,5 +190,5 @@
 
 .s9 .foco {
     top: 91.5%;
-    border: 5px dashed #CC3D70;
+    background-image: url(../../img/btn_print_salvar_mudancas.png);
 }

@@ -150,6 +150,20 @@ button#btn_arrow {
   cursor: pointer;
 }
 
+/* FOCO */
+.foco {
+  position: absolute;
+  left: 50%;
+  width: 40rem;
+  height: 6rem;
+  z-index: 2;
+  cursor: pointer;
+  will-change: transform;
+  backface-visibility: hidden;
+  -moz-backface-visibility: unset;
+  transform: translate(-50%, -50%) scale(1);
+}
+
 /* ANIMATIONS */
 .pulse {
   animation: pulse 1.5s infinite;
