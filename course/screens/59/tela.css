@@ -20,11 +20,9 @@
     height: 8%;
 }
 
-.destaque.d0 {
-    display: none;
-    left: 50%;
-    top: 22.5%;
-    width: 88%;
-    height: 8%;
-    /* border-color: #fff; */
+.foco {
+    top: 22.7%;
+    width: 42rem;
+    height: 6.8rem;
+    background-image: url(../../img/btn_print_cleber_2.png);
 }

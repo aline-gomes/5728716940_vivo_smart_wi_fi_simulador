@@ -20,11 +20,8 @@
     height: 8%;
 }
 
-.destaque.d0 {
-    display: none;
-    left: 50%;
-    top: 91.3%;
-    width: 88%;
-    height: 8%;
-    /* border-color: #fff; */
+.foco {
+    top: 91.4%;
+    width: 36.5rem;
+    background-image: url(../../img/btn_print_pausar_conexao.png);
 }

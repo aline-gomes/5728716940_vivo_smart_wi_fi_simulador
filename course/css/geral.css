@@ -144,12 +144,6 @@ button#btn_arrow {
   background: url(../img/btn_close.png) center center/contain;
 }
 
-/* DESTAQUE */
-.destaque {
-  border: 4px dashed purple;
-  cursor: pointer;
-}
-
 /* FOCO */
 .foco {
   position: absolute;
