@@ -20,11 +20,9 @@
     height: 13%;
 }
 
-.destaque.d0 {
-    display: none;
-    left: 50%;
-    top: 32.5%;
-    width: 84%;
-    height: 13%;
-    pointer-events: none;
+.foco {
+    top: 32.2%;
+    left: 49.9%;
+    height: 12rem;
+    background-image: url(img/btn_print_escritorio.png);
 }

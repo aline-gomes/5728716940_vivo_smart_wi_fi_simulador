@@ -14,16 +14,13 @@
 }
 
 .hole {
-    left: 50%;
     top: 91.3%;
+    left: 50%;
     width: 84%;
     height: 7%;
 }
 
-.destaque.d0 {
-    display: none;
-    left: 50%;
+.foco {
     top: 91.3%;
-    width: 88%;
-    height: 7%;
+    background-image: url(img/btn_print_medicao.png);
 }

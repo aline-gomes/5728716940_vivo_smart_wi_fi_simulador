@@ -20,10 +20,9 @@
     height: 8%;
 }
 
-.destaque.d0 {
-    display: none;
-    left: 28.2%;
+.foco {
     top: 60.5%;
-    width: 39%;
-    height: 8%;
+    left: 28.2%;
+    width: 17rem;
+    background-image: url(img/btn_print_medicao.png);
 }

@@ -21,6 +21,9 @@
 }
 
 .foco {
-    top: 36%;
-    left: 48%;
+    top: 35.6%;
+    left: 46.6%;
+    width: 35.9rem;
+    height: 11rem;
+    background-image: url(img/btn_print_analise.png);
 }

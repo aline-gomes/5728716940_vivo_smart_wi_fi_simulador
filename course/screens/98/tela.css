@@ -20,12 +20,18 @@
     height: 8%;
 }
 
-.destaque.d0 {
-    display: none;
-    left: 48%;
-    top: 63%;
-    width: 74%;
-    height: 8%;
+.foco.f0 {
+    top: 63.15%;
+    left: 47.4%;
+    width: 33.52rem;
+    background-image: url(img/btn_print_escritorio.png);
+}
+
+.foco.f1 {
+    top: 91.5%;
+    touch-action: none;
+    pointer-events: none;
+    background-image: url(img/btn_print_medir.png);
 }
 
 .coverCheckBox {

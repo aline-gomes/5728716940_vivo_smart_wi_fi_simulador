@@ -20,11 +20,10 @@
     height: 5%;
 }
 
-.destaque.d0 {
-    display: none;
+.foco {
+    top: 3%;
     left: 12.5%;
-    top: 3.1%;
-    width: 13%;
-    height: 5%;
-    border-color: #fff;
+    width: 2.7rem;
+    height: 3rem;
+    background-image: url(../../img/btn_print_arrow_back.png);
 }
