@@ -20,11 +20,10 @@
     height: 13%;
 }
 
-.destaque.d0 {
-    display: none;
-    left: 50%;
-    top: 14%;
-    width: 88%;
-    height: 13%;
-    pointer-events: none;
+.foco {
+    top: 14.1%;
+    left: 47%;
+    height: 6.8rem;
+    cursor: default;
+    background-image: url(img/btn_print_wi_fi.png);
 }

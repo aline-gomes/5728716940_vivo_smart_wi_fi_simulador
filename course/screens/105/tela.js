@@ -4,11 +4,11 @@ function init() {
   let balao = document.querySelector(".balao.b0");
   let btFecharBalao = document.querySelector(".balao button.fechar");
 
-  let destaque = document.querySelector(".destaque.d0");
+  let destaque = document.querySelector(".foco");
 
   // balloon events
   let showDestaque = _ => {
-    destaque.style.display = "block";
+    destaque.classList.add('pulse')
 
     setTimeout(() => {
       screen.next();
