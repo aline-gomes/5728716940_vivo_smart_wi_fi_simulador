@@ -11,6 +11,23 @@ function init() {
     })
 }
 
+function fadeInGeral(e) {
+    e = e.children[0]
+    let mascara_balao = document.querySelector('.mascara_balao')
+
+    if (document.body.contains(mascara_balao)) {
+
+        let tl = gsap.timeline({ defaults: { clearProps: true } })
+        tl
+            .from(mascara_balao, .8, { autoAlpha: 0 })
+            .from('.hole', .5, { autoAlpha: 0 })
+            .from('.balao', .5, { autoAlpha: 0 });
+    }
+    else {
+        gsap.from(e, 1, { autoAlpha: 0, delay: .25, onComplete: function () { gsap.set(telas[t], { clearProps: true }); } });
+    }
+}
+
 function nextCard() {
     if ((t + 1) == telas.length) {
         setTimeout(() => { modulos.end(5); }, 1000);
@@ -21,8 +38,7 @@ function nextCard() {
     telas[t].style.display = 'none'
     t++
     telas[t].style.display = 'block'
-
-    gsap.from(telas[t], .5, { autoAlpha: 0, onComplete: function () { gsap.set(telas[t], { clearProps: true }); } });
+    fadeInGeral(telas[t])
 }
 
 function closeBalao(e) {

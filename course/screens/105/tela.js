@@ -32,5 +32,6 @@ function init() {
   // Animation
   let tl = new gsap.timeline();
   tl.fromTo(mascara, .8, { opacity: 0 }, { opacity: 1, delay: .5 });
-  tl.fromTo(balao, .8, { opacity: 0 }, { opacity: 1 });
+  tl.fromTo('.hole', .5, { opacity: 0 }, { opacity: 1 });
+  tl.fromTo(balao, .5, { opacity: 0 }, { opacity: 1 });
 }

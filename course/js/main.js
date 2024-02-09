@@ -1,6 +1,6 @@
 //Numero de telas
 var n_telas = 1;
-var c_screen = 116;
+var c_screen = 0;
 
 const container = $("#loaded_content");
 
@@ -145,6 +145,7 @@ function fireClick(node) {
 
 // Menu control
 var modulos = {
+  finish: false,
   t_ini: [2, 3, 4, 5, 57, 64, 68, 81, 113, 114, 115, 116],
   t_fin: [],
   end: (n) => {
@@ -158,9 +159,7 @@ var modulos = {
     sco.setRaw()
 
     if (n == 116) {
-      sco.complet()
-      screen.goto(117)
-      return
+      modulos.finish = true;
     }
     screen.goto(1)
   }

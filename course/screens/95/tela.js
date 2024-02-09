@@ -19,7 +19,6 @@ function init() {
 
   // Animation
   let tl = new gsap.timeline();
-  tl.fromTo(mainContent, 2, { opacity: 0 }, { opacity: 1 });
   tl.fromTo(mascara, .8, { opacity: 0 }, { opacity: 1, delay: 3 });
-  tl.fromTo(balao, .8, { opacity: 0 }, { opacity: 1 });
+  tl.fromTo(balao, .5, { opacity: 0 }, { opacity: 1 });
 }

@@ -82,3 +82,18 @@
 .container_items .btns.locked:nth-child(2) {
     background-image: url(../1/img/img_review_locked.png);
 }
+
+.container_avancar {
+    display: none;
+    position: absolute;
+    bottom: 3%;
+    right: 12.5%;
+    width: 4rem;
+    height: auto;
+    cursor: pointer;
+}
+
+.btn_arrow {
+    width: 100%;
+    height: auto;
+}
