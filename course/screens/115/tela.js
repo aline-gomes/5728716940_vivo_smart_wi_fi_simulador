@@ -11,7 +11,7 @@ function init() {
     })
     let tl = gsap.timeline({ defaults: { clearProps: true } })
         .from('.p1', 1, { autoAlpha: 0 })
-        .from('.p2', 1, { autoAlpha: 0, top: -30 }, '.5');
+        .from('.p2', 1, { autoAlpha: 0, y: -30 }, '.5');
 }
 
 function fadeInGeral(e) {
