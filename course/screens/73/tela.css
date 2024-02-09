@@ -21,9 +21,40 @@
 }
 
 .foco {
-    top: 34.76%;
     left: 83.6%;
     width: 3.4rem;
     height: 3.4rem;
-    background-image: url(../../img/btn_print_check.png);
+    box-shadow: 0 0 0 0 rgba(102, 0, 153, 0);
+    background-image: url(../../img/btn_print_radio.png);
+}
+
+.foco.check {
+    animation: fadeIn .5s forwards linear;
+    background-image: url(../../img/btn_print_radio_check.png);
+}
+
+#foco_01.foco {
+    top: 34.76%;
+}
+
+#foco_02.foco {
+    top: 64.4%;
+}
+
+/* ANIMATION */
+@keyframes pulse_radio_button {
+    0% {
+        transform: translate(-50%, -50%) scale(0.9);
+        box-shadow: 0 0 0 0 rgba(102, 0, 153, 0);
+    }
+
+    70% {
+        transform: translate(-50%, -50%) scale(1);
+        box-shadow: 0 0 0 10px rgba(102, 0, 153, .1);
+    }
+
+    100% {
+        transform: translate(-50%, -50%) scale(0.9);
+        box-shadow: 0 0 0 0 rgba(102, 0, 153, 0);
+    }
 }

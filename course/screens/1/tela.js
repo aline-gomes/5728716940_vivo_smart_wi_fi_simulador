@@ -50,8 +50,9 @@ var animLastItems = _ => {
         elements[i].style.cssText = '';
 
         gsap.from(elements[i], .4, {
-            autoAlpha: 0, x: '-15%', ease: Back.easeOut.config(3.5), delay: (0.2 * i), onComplete: function () {
+            autoAlpha: 0, x: '-15%', ease: Back.easeOut.config(3.5), delay: (0.2 * i),
 
+            onComplete: function () {
                 gsap.set(elements[i], { clearProps: true });
                 if (modulos.finish == true) document.querySelector('.container_avancar').style.display = 'block';
             }

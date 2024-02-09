@@ -4,11 +4,11 @@ function init() {
   let balao = document.querySelector(".balao.b0");
   let btFecharBalao = document.querySelector(".balao button.fechar");
 
-  let destaque = document.querySelector(".foco");
+  let destaque = document.querySelectorAll(".foco");
 
   // balloon events
   let showDestaque = _ => {
-    destaque.classList.add('pulse')
+    destaque.forEach((element) => element.style.cssText = 'animation: pulse_radio_button 1.5s infinite;');
   }
 
   let handleCloseBalloon = (e) => {
@@ -21,9 +21,13 @@ function init() {
 
   // destaque events
   let handleAvancar = (e) => {
-    screen.next();
+    e.target.classList.add('check')
+    e.target.style.cssText = 'animation: none; touch-action: none; pointer-events: none;'
+
+    if (document.querySelectorAll('.foco.check').length >= 2) screen.goto(75);
   }
-  destaque.addEventListener("click", handleAvancar);
+
+  destaque.forEach((element) => element.addEventListener("click", handleAvancar));
 
   // Animation
   let tl = new gsap.timeline();

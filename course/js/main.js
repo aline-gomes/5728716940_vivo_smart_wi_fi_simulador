@@ -160,6 +160,7 @@ var modulos = {
 
     if (n == 116) {
       modulos.finish = true;
+      sco.complet();
     }
     screen.goto(1)
   }

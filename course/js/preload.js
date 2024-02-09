@@ -119,6 +119,8 @@ function returnList() {
         "./img/bg_preload.png",
         "./img/bg_portrait.png",
         "./img/bg_landscape.png",
+        "./img/btn_print_radio.png",
+        "./img/btn_print_radio_check.png",
         "./screens/0/img/bg.png",
         "./screens/0/img/btn_bg.png",
         "./screens/0/img/retranca.png",
