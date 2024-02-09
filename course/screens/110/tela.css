@@ -20,11 +20,10 @@
     height: 4%;
 }
 
-.destaque.d0 {
-    display: none;
+.foco {
+    top: 2.5%;
     left: 15%;
-    top: 2.6%;
-    width: 14%;
-    height: 4%;
-    border-color: #fff;
+    width: 3rem;
+    height: 3rem;
+    background-image: url(../../img/btn_print_fechar.png);
 }

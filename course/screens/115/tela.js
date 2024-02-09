@@ -11,7 +11,7 @@ function init() {
     })
     let tl = gsap.timeline({ defaults: { clearProps: true } })
         .from('.p1', 1, { autoAlpha: 0 })
-        .from('.p2', 1, { autoAlpha: 0, y: -30 }, '.5');
+        .from('.p2', 1, { autoAlpha: 0, top: -30 }, '.5');
 }
 
 function fadeInGeral(e) {
@@ -32,4 +32,5 @@ function nextCard() {
 function nextSl(e) {
     e.style.cssText = 'display: none'
     document.querySelector('.s2').querySelector('img').style.cssText = ''
+    document.querySelector('.s2').style.cssText = 'background-image: url(./screens/115/img/103.png)'
 }

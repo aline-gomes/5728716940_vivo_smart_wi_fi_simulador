@@ -1,131 +1,117 @@
 /* BALÃO */
 .mascara_balao {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-  }
-  
-  .hole {
-    z-index: 3;
-    box-shadow: 0 0 0 99999px rgba(44, 5, 59, .9);
-  }
-  
-  .balao {
-    z-index: 4;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 10%;
-    border-radius: 1.5rem;
-    background: #78009d;
-  }
-  
-  .balao p {
-    text-align: center;
-    font-family: VivoTypeRegular;
-    font-size: 1.5rem;
-    line-height: 1.5rem;
-    padding: 1.5rem;
-    color: #fff;
-  }
-  
-  .balao .seta {
-    position: absolute;
-    bottom: -2.7rem;
-    left: 3rem;
-    width: 3rem;
-    height: 3rem;
-    background: url(../../img/seta_balao.png) center center/contain no-repeat;
-  }
-  
-  .balao .seta.cima {
-    position: absolute;
-    top: -2.7rem;
-    left: 3rem;
-    transform: scale(-1);
-  }
-  
-  .balao button.fechar {
-    position: absolute;
-    top: -1rem;
-    right: -1rem;
-    width: 4rem;
-    height: 4rem;
-    border: none;
-    cursor: pointer;
-    background: url(../../img/btn_close.png) center center/contain;
-  }
-
-.content {
-    top: 50%;
-    left: 50%;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    /* background-image: url(../57/img/bg.png); */
-    color: white;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
-.foco {
-    z-index: 1;
-    top: 42%;
-    left: 50%;
-    background-color: transparent;
-    width: 16em;
-    height: 16em;
-    border-radius: 50%;
-    border: 5px dashed white;
-    cursor: pointer;
-    display: none;
+.hole {
+  z-index: 3;
+  box-shadow: 0 0 0 99999px rgba(44, 5, 59, .9);
+}
+
+.balao {
+  z-index: 4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 10%;
+  border-radius: 1.5rem;
+  background: #78009d;
+}
+
+.balao p {
+  text-align: center;
+  font-family: VivoTypeRegular;
+  font-size: 1.5rem;
+  line-height: 1.5rem;
+  padding: 1.5rem;
+  color: #fff;
+}
+
+.balao .seta {
+  position: absolute;
+  bottom: -2.7rem;
+  left: 3rem;
+  width: 3rem;
+  height: 3rem;
+  background: url(../../img/seta_balao.png) center center/contain no-repeat;
+}
+
+.balao .seta.cima {
+  position: absolute;
+  top: -2.7rem;
+  left: 3rem;
+  transform: scale(-1);
+}
+
+.balao button.fechar {
+  position: absolute;
+  top: -1rem;
+  right: -1rem;
+  width: 4rem;
+  height: 4rem;
+  border: none;
+  cursor: pointer;
+  background: url(../../img/btn_close.png) center center/contain;
+}
+
+.content {
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  /* background-image: url(../57/img/bg.png); */
+  color: white;
 }
 
 .s1 {
-    background-image: url(../../img/bg_portrait.png);
+  background-image: url(../../img/bg_portrait.png);
 }
 
 .s1 .p1 {
-    font-family: 'VivoTypeBold';
-    top: 25%;
-    left: 50%;
-    font-size: 92px;
-    text-align: center;
-    width: 88%;
+  font-family: 'VivoTypeBold';
+  top: 25%;
+  left: 50%;
+  font-size: 92px;
+  text-align: center;
+  width: 88%;
 }
 
 .s1 .p2 {
-    font-family: 'VivoTypeLight';
-    top: 51%;
-    left: 50%;
-    font-size: 54px;
-    text-align: center;
-    width: 80%;
+  font-family: 'VivoTypeLight';
+  top: 51%;
+  left: 50%;
+  font-size: 54px;
+  text-align: center;
+  width: 80%;
 }
 
 .s1 img {
-    cursor: pointer;
-    top: 90%;
-    left: 83%;
-    width: 16%;
+  cursor: pointer;
+  top: 90%;
+  left: 83%;
+  width: 16%;
 }
 
 .s2 {
-    background-image: url(img/102.png);
+  background-image: url(img/102.png);
 }
 
 .s2 .foco {
-    display: block;
-    border: 5px dashed #609;
-    border-radius: 0px;
-    width: 41em;
-    height: 53em;
-    top: 50%;
+  display: block;
+  top: 50%;
+  width: 41em;
+  height: 53em;
+  background-image: url(img/btn_print_repetidor.png);
 }
 
 .s2 img {
-    cursor: pointer;
-    top: 90%;
-    left: 83%;
-    width: 16%;
+  cursor: pointer;
+  top: 90%;
+  left: 83%;
+  width: 16%;
 }
