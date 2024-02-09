@@ -7,11 +7,10 @@
     background-image: url(../84/img/bg.png);
 }
 
-.destaque.d0 {
-    display: none;
-    opacity: 0;
-    left: 50%;
-    top: 27%;
-    width: 72%;
-    height: 16%;
+.foco {
+    top: 26.7%;
+    left: 35.8%;
+    width: 20rem;
+    height: 11.1rem;
+    background-image: url(img/btn_print_nome_senha.png);
 }

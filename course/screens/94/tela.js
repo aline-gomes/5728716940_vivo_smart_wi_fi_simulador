@@ -7,11 +7,11 @@ function init() {
   let balao = document.querySelector(".balao.b0");
   let btFecharBalao = document.querySelector(".balao button.fechar");
 
-  let destaques = document.querySelectorAll(".destaque");
+  let destaques = document.querySelectorAll(".foco");
 
   // balloon events
   let showDestaque = (dest) => {
-    destaques[dest].style.display = "block";
+    destaques[dest].classList.add('pulse')
   }
 
   let handleCloseBalloon = (e) => {
@@ -27,10 +27,14 @@ function init() {
     if (currDestaque === (destaques.length - 1)) {
       screen.next();
     } else {
-      destaques[currDestaque].style.display = "none";
+      destaques[currDestaque].style.cssText = 'touch-action: none; pointer-events: none;'
+      destaques[currDestaque].classList.remove('pulse')
 
       currDestaque++;
       showDestaque(currDestaque);
+
+      destaques[currDestaque].style.cssText = 'touch-action: unset; pointer-events: unset;'
+      destaques[currDestaque].classList.add('pulse')
     }
   }
 

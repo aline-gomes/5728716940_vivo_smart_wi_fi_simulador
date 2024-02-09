@@ -20,18 +20,17 @@
     height: 6%;
 }
 
-.destaque.d0 {
-    display: none;
-    left: 50%;
-    top: 29.5%;
-    width: 72%;
-    height: 6%;
+.foco.f0 {
+    top: 29.6%;
+    width: 30.8rem;
+    background-image: url(img/btn_print_servidores.png);
 }
 
-.destaque.d1 {
-    display: none;
-    left: 50%;
-    top: 19.8%;
-    width: 30%;
-    height: 7.5%;
+.foco.f1 {
+    top: 19.75%;
+    left: 49.9%;
+    width: 12.2rem;
+    touch-action: none;
+    pointer-events: none;
+    background-image: url(img/btn_print_iniciar.png);
 }

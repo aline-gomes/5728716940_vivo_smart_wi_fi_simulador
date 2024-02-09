@@ -20,10 +20,7 @@
     height: 11%;
 }
 
-.destaque.d0 {
-    display: none;
-    left: 48%;
+.foco {
     top: 36%;
-    width: 82%;
-    height: 11%;
+    left: 48%;
 }

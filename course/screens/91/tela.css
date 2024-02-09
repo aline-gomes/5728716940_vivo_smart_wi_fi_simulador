@@ -14,16 +14,13 @@
 }
 
 .hole {
-    left: 50.6%;
     top: 94.7%;
+    left: 50%;
     width: 85%;
     height: 8%;
 }
 
-.destaque.d0 {
-    display: none;
-    left: 50.3%;
+.foco {
     top: 94.7%;
-    width: 89%;
-    height: 8%;
+    background-image: url(../../img/btn_print_compartilhar.png);
 }

@@ -20,56 +20,16 @@
     height: 7%;
 }
 
-.destaque.d0 {
-    display: none;
-    pointer-events: none;
-    left: 50%;
-    top: 13%;
-    width: 84%;
-    height: 7%;
-}
-
-.destaque.d1 {
-    display: none;
-    left: 50%;
-    top: 28%;
-    width: 89%;
-    height: 12%;
-}
-
-.destaque.d2 {
-    display: none;
-    left: 50%;
-    top: 62.5%;
-    width: 89%;
-    height: 15%;
-}
-
-.destaque.d3 {
-    display: none;
-    left: 50%;
-    top: 79.5%;
-    width: 89%;
-    height: 14%;
-}
-
-.destaque.d4 {
-    display: none;
-    left: 49.5%;
-    top: 91.3%;
-    width: 80.5%;
-    height: 8%;
-}
-
 input[type="text"].i0 {
-    top: 14.2%;
+    top: 13.85%;
     left: 50%;
-    width: 78%;
-    font-family: 'VivoTypeBold';
-    font-size: 1.5rem;
-    color: #1f1f1f;
-    padding: .2rem;
+    width: 37.4rem;
     border: none;
+    padding: .2rem;
+    color: #1f1f1f;
+    font-size: 1.5rem;
+    font-family: 'VivoTypeBold';
+    border-bottom: 0.2rem solid #cbcbcb;
 }
 
 input[type="text"].i1 {
@@ -81,6 +41,7 @@ input[type="text"].i1 {
     color: #1f1f1f;
     padding: .2rem;
     border: none;
+    touch-action: none;
     pointer-events: none;
 }
 
