@@ -14,6 +14,10 @@
     height: 5%;
 }
 
+.balao {
+    width: 67%;
+}
+
 .balao button.fechar {
     top: -1rem;
     right: -1.5rem;
@@ -67,12 +71,6 @@
     height: 13%;
 }
 
-.s2 .balao {
-    top: 41%;
-    left: 65%;
-    width: 50%;
-}
-
 .s2 .foco {
     top: 19.2%;
     left: 62.4%;
@@ -96,12 +94,6 @@
     background-image: url(img/print_3.png);
 }
 
-.s5 .balao {
-    top: 20%;
-    left: 65%;
-    width: 50%;
-}
-
 .s5 .foco {
     top: 3.7%;
     left: 91%;
@@ -118,12 +110,6 @@
     top: 8%;
     left: 64.2%;
     width: 13%;
-}
-
-.s6 .balao {
-    top: 20%;
-    left: 65%;
-    width: 50%;
 }
 
 .s6 .foco {
@@ -168,9 +154,7 @@
 }
 
 .s9 .balao {
-    top: 67%;
-    left: 50%;
-    width: 50%;
+    width: 62%;
 }
 
 .s9 .foco {

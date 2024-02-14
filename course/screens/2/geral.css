@@ -37,7 +37,6 @@ input[type="text"],
     font-size: 1.9rem;
     font-family: VivoTypeRegular;
     background-color: transparent;
-    animation: pulse 1.5s infinite;
 }
 
 input[type="text"] {
@@ -69,10 +68,19 @@ input[type="text"] {
 }
 
 .hole {
+    top: 21.2%;
     left: 50%;
-    top: 27%;
     width: 84%;
-    height: 39%;
+    height: 18%;
+}
+
+#hole_02.hole {
+    top: 20%;
+    height: 26%;
+}
+
+#hole_03.hole {
+    top: 16%;
 }
 
 .balao button.fechar {
@@ -81,9 +89,7 @@ input[type="text"] {
 }
 
 .balao {
-    top: 56%;
-    left: 54%;
-    width: 50%;
+    width: 65%;
 }
 
 /* FEEDBACK */

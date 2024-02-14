@@ -98,6 +98,8 @@ button#btn_arrow {
   display: flex;
   justify-content: center;
   align-items: center;
+  top: 50%;
+  left: 50%;
   z-index: 5;
   min-height: 10%;
   border-radius: 1.5rem;
@@ -105,12 +107,13 @@ button#btn_arrow {
 }
 
 .balao p {
-  text-align: center;
-  font-family: VivoTypeRegular;
-  font-size: 1.5rem;
-  line-height: 1.8rem;
-  padding: 1.5rem;
+  width: 90%;
   color: #fff;
+  padding: 2rem 0;
+  font-size: 2rem;
+  text-align: center;
+  line-height: 2.3rem;
+  font-family: VivoTypeRegular;
 }
 
 .balao button.fechar {

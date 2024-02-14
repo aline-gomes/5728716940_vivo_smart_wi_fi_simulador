@@ -1,5 +1,6 @@
 //Para abrir em outro card só trocar o t
 var t = 0, telas = 0
+var hole = document.querySelector('.hole');
 var elements = document.querySelectorAll('.anim');
 var user_number = document.querySelector(".user_number");
 var mascara_balao = document.querySelector(".mascara_balao");
@@ -38,8 +39,6 @@ function nextCard() {
 
 user_number.addEventListener("focus", e => {
     e.target.value = "";
-    user_number.style.animation = 'none'
-    document.querySelector('.input-wrapper').style.animation = 'none'
 })
 
 var inputResp = ['00000000000', '000000', '123456'];
@@ -82,22 +81,25 @@ var showInputs = _ => {
 
     switch (true) {
         case (t == 8):
+            hole.id = 'hole_01'
             user_number.style.cssText = 'display: block;'
-            pop_text.innerHTML = '<p>Preencha o campo com<br>o número 00000000000.</p>'
+            pop_text.innerHTML = 'Preencha o campo com<br>o número 00000000000.'
             user_number.oninput = () => { onInput(0, 11); };
             break;
 
         case (t == 11):
+            hole.id = 'hole_02'
             user_number.value = '';
             document.querySelector('.input-wrapper').style.display = 'block'
             user_number.style.cssText = 'display: block; border: none; top: 27%; left: 51.3%; width: 27rem; padding: 0; letter-spacing: 3.8rem;'
-            pop_text.innerHTML = '<p>Preencha o campo com<br>o número 000000.</p>'
+            pop_text.innerHTML = 'Preencha o campo com<br>o número 000000.'
             user_number.oninput = () => { onInput(1, 6); };
             break;
 
         case (t == 13):
+            hole.id = 'hole_03'
             user_number.style.cssText = 'display: block; top: 20%; padding: 0;'
-            pop_text.innerHTML = '<p>Preencha o campo com<br>o número 123456.</p>'
+            pop_text.innerHTML = 'Preencha o campo com<br>o número 123456.'
             user_number.oninput = () => { onInput(2, 6); };
             break;
     }
@@ -114,7 +116,7 @@ function closeFeedBack(element) {
 function openLastMask() {
     mascara_balao.style.display = 'block'
 
-    document.querySelector('.hole').style.display = 'none'
+    hole.style.display = 'none'
     document.querySelector('.balao p').innerHTML = '<strong>Pronto!</strong><br> Você está na tela inicial do App Vivo Smart Wi-Fi.'
 
     document.querySelector('.balao .fechar').onclick = _ => { nextCard(); };
