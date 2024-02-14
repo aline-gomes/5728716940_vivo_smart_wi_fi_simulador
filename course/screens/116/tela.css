@@ -31,22 +31,6 @@
     color: #fff;
 }
 
-.balao .seta {
-    position: absolute;
-    bottom: -2.7rem;
-    left: 3rem;
-    width: 3rem;
-    height: 3rem;
-    background: url(../../img/seta_balao.png) center center/contain no-repeat;
-}
-
-.balao .seta.cima {
-    position: absolute;
-    top: -2.7rem;
-    left: 3rem;
-    transform: scale(-1);
-}
-
 .balao button.fechar {
     position: absolute;
     top: -1rem;
@@ -114,10 +98,6 @@
     width: 50%;
 }
 
-.s2 .balao .seta {
-    left: 16.5rem;
-}
-
 .s2 .foco {
     top: 92.95%;
     left: 85.5%;
@@ -140,12 +120,6 @@
     width: 50%;
     top: 25%;
     left: 70%;
-}
-
-.s3 .balao .seta {
-    top: -2.7rem;
-    bottom: 0px;
-    transform: rotate(180deg);
 }
 
 .s3 .foco {
@@ -172,12 +146,6 @@
     left: 70%;
 }
 
-.s4 .balao .seta {
-    top: -2.7rem;
-    bottom: 0px;
-    transform: rotate(180deg);
-}
-
 .s4 .foco {
     top: 48%;
     width: 42rem;
@@ -200,12 +168,6 @@
     width: 50%;
     top: 20%;
     left: 36%;
-}
-
-.s5 .balao .seta {
-    top: -2.7rem;
-    bottom: 0px;
-    transform: rotate(180deg);
 }
 
 .s5 .foco {
@@ -231,12 +193,6 @@
     width: 50%;
     top: 39%;
     left: 70%;
-}
-
-.s6 .balao .seta {
-    top: -2.7rem;
-    bottom: 0px;
-    transform: rotate(180deg);
 }
 
 .s6 .foco {
@@ -275,12 +231,6 @@
     left: 36%;
 }
 
-.s8 .balao .seta {
-    top: -2.7rem;
-    bottom: 0px;
-    transform: rotate(180deg);
-}
-
 .s8 .foco {
     top: 2.6%;
     left: 12.5%;
@@ -306,12 +256,6 @@
     width: 50%;
 }
 
-.s9 .balao .seta {
-    top: -2.7rem;
-    bottom: 0px;
-    transform: rotate(180deg);
-}
-
 .s9 .foco {
     top: 29.2%;
     left: 29.5%;
@@ -334,12 +278,6 @@
     top: 20%;
     left: 36%;
     width: 50%;
-}
-
-.s10 .balao .seta {
-    top: -2.7rem;
-    bottom: 0px;
-    transform: rotate(180deg);
 }
 
 .s10 .foco {
@@ -372,12 +310,6 @@
     left: 70%;
 }
 
-.s11 .balao .seta {
-    top: -2.7rem;
-    bottom: 0px;
-    transform: rotate(180deg);
-}
-
 .s11 .foco {
     top: 35.5%;
     left: 22.5%;
@@ -407,12 +339,6 @@
     left: 70%;
 }
 
-.s12 .balao .seta {
-    top: -2.7rem;
-    bottom: 0px;
-    transform: rotate(180deg);
-}
-
 .s12 .foco {
     top: 64.5%;
     background-image: url(img/btn_print_excluir_conta_red.png);
@@ -438,12 +364,6 @@
     width: 50%;
     top: 59%;
     left: 70%;
-}
-
-.s13 .balao .seta {
-    top: -2.7rem;
-    bottom: 0px;
-    transform: rotate(180deg);
 }
 
 .s13 .foco {

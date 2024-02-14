@@ -113,27 +113,6 @@ button#btn_arrow {
   color: #fff;
 }
 
-.balao .seta {
-  position: absolute;
-  bottom: -2.7rem;
-  left: 3rem;
-  width: 3rem;
-  height: 3rem;
-  background: url(../img/seta_balao.png) center center/contain no-repeat;
-}
-
-.balao .seta.cima {
-  position: absolute;
-  top: -2.7rem;
-  left: 3rem;
-  transform: scale(-1);
-}
-
-.balao .seta.cima.direita {
-  position: absolute;
-  left: 17rem;
-}
-
 .balao button.fechar {
   position: absolute;
   top: .5rem;

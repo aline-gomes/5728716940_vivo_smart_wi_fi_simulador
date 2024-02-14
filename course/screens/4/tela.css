@@ -25,12 +25,6 @@
     width: 50%;
 }
 
-.balao .seta {
-    top: -2.7rem;
-    left: 9rem;
-    transform: scaleY(-1);
-}
-
 .s1 {
     background-image: url(../../img/bg_portrait.png);
 }

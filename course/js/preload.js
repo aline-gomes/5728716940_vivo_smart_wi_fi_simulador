@@ -114,7 +114,6 @@ function returnList() {
     preload_list = [
         "./img/feed_neg.png",
         "./img/btn_close.png",
-        "./img/seta_balao.png",
         "./img/bt_avancar.png",
         "./img/bg_preload.png",
         "./img/bg_portrait.png",

@@ -19,12 +19,6 @@
     right: -1.5rem;
 }
 
-.balao .seta {
-    top: -2.7rem;
-    left: 9rem;
-    transform: scaleY(-1);
-}
-
 .s1 {
     background-image: url(../../img/bg_portrait.png);
 }
@@ -70,12 +64,6 @@
     top: 64%;
     left: 31%;
     width: 50%;
-}
-
-.s2 .balao .seta {
-    top: unset;
-    left: 3rem;
-    transform: scaleX(-1);
 }
 
 .s2 .foco {

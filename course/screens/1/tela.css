@@ -16,7 +16,7 @@
     width: 90%;
     font-size: 4.2rem;
     text-align: center;
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
     text-transform: uppercase;
     color: var(--magenta-vivo);
     font-family: VivoTypeBold, Arial, Helvetica, sans-serif;
@@ -38,8 +38,8 @@
     width: 70%;
     text-align: left;
     color: var(--white);
-    font-size: 2.05rem;
-    line-height: 2.05rem;
+    font-size: 2.3rem;
+    line-height: 2.3rem;
     font-family: VivoTypeBold, Arial, Helvetica, sans-serif;
 }
 
@@ -52,8 +52,8 @@
 
 .container_items .btns {
     position: relative;
-    width: 3.5rem;
-    height: 3.5rem;
+    width: 3.9rem;
+    height: 3.9rem;
     cursor: pointer;
     background-repeat: no-repeat;
     background-size: contain;
@@ -86,7 +86,7 @@
 .container_avancar {
     display: none;
     position: absolute;
-    bottom: 3%;
+    bottom: 1.2%;
     right: 12.5%;
     width: 4rem;
     height: auto;

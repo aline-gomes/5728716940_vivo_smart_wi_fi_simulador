@@ -19,12 +19,6 @@
     right: -1.5rem;
 }
 
-.balao .seta {
-    top: -2.7rem;
-    left: 9rem;
-    transform: scaleY(-1);
-}
-
 /* TELAS PRINCIPAIS */
 .capas {
     background-image: url(../../img/bg_portrait.png);
@@ -108,10 +102,6 @@
     width: 50%;
 }
 
-.s5 .balao .seta {
-    left: 16rem;
-}
-
 .s5 .foco {
     top: 3.7%;
     left: 91%;
@@ -181,11 +171,6 @@
     top: 67%;
     left: 50%;
     width: 50%;
-}
-
-.s9 .balao .seta {
-    top: unset;
-    transform: none;
 }
 
 .s9 .foco {

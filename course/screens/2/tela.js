@@ -114,7 +114,6 @@ function closeFeedBack(element) {
 function openLastMask() {
     mascara_balao.style.display = 'block'
 
-    document.querySelector('.seta').style.display = 'none'
     document.querySelector('.hole').style.display = 'none'
     document.querySelector('.balao p').innerHTML = '<strong>Pronto!</strong><br> Você está na tela inicial do App Vivo Smart Wi-Fi.'
 
