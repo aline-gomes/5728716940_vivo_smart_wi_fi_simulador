@@ -9,21 +9,19 @@
 
 .balao.b0 {
     width: 50%;
-    top: 38%;
-    left: 50%;
 }
 
 .hole {
-    left: 45%;
     top: 22%;
-    width: 70%;
+    left: 50%;
+    width: 80%;
     height: 9%;
 }
 
 .foco {
-    top: 22.05%;
-    left: 43.5%;
-    width: 32rem;
+    top: 22.04%;
+    left: 49.5%;
+    width: 37.01rem;
     height: 8rem;
     background-image: url(../../img/btn_print_horarios_desconexao.png);
 }

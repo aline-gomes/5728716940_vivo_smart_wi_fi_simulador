@@ -18,7 +18,6 @@ function init() {
   // on first focus...
   inputField.addEventListener("focus", e => {
     e.target.value = "";
-    e.target.classList.remove('pulse')
   })
 
   // on leaving field...

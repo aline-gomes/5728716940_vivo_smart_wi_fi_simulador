@@ -8,14 +8,12 @@
 }
 
 .balao.b0 {
-    width: 50%;
-    top: 26%;
-    left: 50%;
+    width: 58%;
 }
 
 .hole {
-    left: 50%;
     top: 13%;
+    left: 50%;
     width: 84%;
     height: 7%;
 }
@@ -33,16 +31,17 @@ input[type="text"].i0 {
 }
 
 input[type="text"].i1 {
-    top: 27%;
+    top: 27.5%;
     left: 50%;
     width: 78%;
-    font-family: 'VivoTypeBold';
-    font-size: 1.5rem;
-    color: #1f1f1f;
-    padding: .2rem;
     border: none;
+    padding: 0.2rem;
+    color: #1f1f1f;
+    font-size: 1.5rem;
     touch-action: none;
     pointer-events: none;
+    font-family: 'VivoTypeBold';
+    border-bottom: 0.2rem solid #dee0de;
 }
 
 .feedback {

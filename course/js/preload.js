@@ -119,6 +119,7 @@ function returnList() {
         "./img/bg_portrait.png",
         "./img/bg_landscape.png",
         "./img/btn_print_radio.png",
+        "./img/btn_print_salvar.png",
         "./img/btn_print_radio_check.png",
         "./screens/0/img/bg.png",
         "./screens/0/img/btn_bg.png",
@@ -127,5 +128,7 @@ function returnList() {
         "./screens/1/img/img_init_module.png",
         "./screens/1/img/img_review_locked.png",
         "./screens/1/img/img_init_module_locked.png",
+        "./screens/73/img/bg.png",
+        "./screens/110/img/bg.png",
     ];
 }

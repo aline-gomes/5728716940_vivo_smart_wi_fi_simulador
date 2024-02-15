@@ -46,11 +46,8 @@ function nextCard() {
 }
 
 function closeBalao(e) {
+    e.parentNode.parentNode.nextElementSibling.classList.add('pulse')
     e.parentElement.parentElement.parentElement.removeChild(e.parentElement.parentElement)
-    let y = telas[t].querySelector('.pulse')
-    if (y) {
-        y.style.display = 'block'
-    }
 }
 
 function skip() {

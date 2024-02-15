@@ -8,15 +8,15 @@
 }
 
 .balao.b0 {
-    width: 50%;
     top: 72%;
-    left: 50%;
+    width: 75%;
+    padding: 0 1.2rem;
 }
 
 .hole {
-    left: 46.5%;
     top: 51%;
-    width: 77%;
+    left: 50%;
+    width: 86%;
     height: 14%;
 }
 

@@ -17,7 +17,6 @@ function init() {
   // on first focus...
   inputField.addEventListener("focus", e => {
     e.target.value = "";
-    e.target.className = "nome abs"
   })
 
   // on leaving field...
@@ -42,7 +41,7 @@ function init() {
 
   // validate string, return bool
   let checkInput = (inp) => {
-    inp.value = inp.value.replace(/^./, str => str.toUpperCase())
+    inp.value = inp.value.toLowerCase().replace(/^./, str => str.toUpperCase())
 
     if (inp.value === validString) {
       return true;

@@ -8,9 +8,8 @@
 }
 
 .balao.b0 {
-    width: 50%;
-    top: 28%;
-    left: 50%;
+    width: 62%;
+    padding: 0 1rem;
 }
 
 .hole {
@@ -22,7 +21,7 @@
 
 .foco {
     top: 13.1%;
-    left: 30.6%;
-    width: 18.2rem;
+    left: 50.6%;
+    width: 38rem;
     background-image: url(../../img/btn_print_perfil_joanna.png);
 }

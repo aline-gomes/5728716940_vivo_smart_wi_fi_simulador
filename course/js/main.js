@@ -1,6 +1,6 @@
 //Numero de telas
 var n_telas = 1;
-var c_screen = 70;
+var c_screen = 113;
 
 const container = $("#loaded_content");
 
@@ -37,7 +37,6 @@ var screen = {
       screen.lock = true;
       c_screen++;
       screen.goto();
-      // hud.block_nav();
     }
   },
   back: () => {
@@ -45,7 +44,6 @@ var screen = {
       screen.lock = true;
       c_screen--;
       screen.goto();
-      hud.block_nav();
     }
   },
 };
