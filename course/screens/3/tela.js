@@ -81,11 +81,7 @@ function closeFeedBack(element) {
 }
 
 function closeBalao(e) {
-    let destaque = e.parentNode.nextElementSibling
-    let hole = e.parentNode.previousElementSibling
-
-    hole.parentNode.removeChild(hole)
-    e.parentElement.parentElement.removeChild(e.parentElement)
-
+    let destaque = e.parentNode.parentNode.nextElementSibling
+    e.parentNode.parentNode.parentNode.removeChild(e.parentNode.parentNode)
     if (t !== 7) destaque.classList.add('pulse');
 }

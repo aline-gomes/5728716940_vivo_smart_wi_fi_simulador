@@ -42,11 +42,8 @@ function nextCard() {
 }
 
 function closeBalao(e) {
-    let destaque = e.parentNode.nextElementSibling
-    let hole = e.parentNode.previousElementSibling
-
-    hole.parentNode.removeChild(hole)
-    e.parentElement.parentElement.removeChild(e.parentElement)
+    let destaque = e.parentNode.parentNode.nextElementSibling
+    e.parentNode.parentNode.parentNode.removeChild(e.parentNode.parentNode)
 
     if (document.body.contains(destaque)) destaque.classList.add('pulse')
 }
