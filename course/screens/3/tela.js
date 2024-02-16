@@ -1,6 +1,7 @@
 //Para abrir em outro card só trocar o t
 var t = 0,
-    telas = 0
+    telas = 0,
+    inputText = document.querySelector('.s8 input')
 
 function init() {
     telas = document.querySelectorAll('section')
@@ -9,6 +10,8 @@ function init() {
             return
         e.style.display = 'none'
     })
+
+    inputText.addEventListener("input", onInput);
 }
 
 function fadeInGeral(e) {
@@ -38,13 +41,43 @@ function nextCard() {
     t++
     telas[t].style.display = 'block'
     fadeInGeral(telas[t])
+}
 
-    if (t == 7) {
-        setTimeout(() => {
-            document.querySelector('#foco_1').classList.remove('pulse')
-            document.querySelector('#foco_2').classList.add('pulse')
-        }, 3000);
+inputText.addEventListener("focus", e => {
+    e.target.value = "";
+})
+
+var inputResp = 'Cleber';
+
+function onInput(e) {
+    let name = e.target.value.toLowerCase().replace(/^./, str => str.toUpperCase())
+    e.target.value = name;
+
+    let isNumber = /^\d+$/.test(name);
+
+    if (isNumber || name !== inputResp && name.length == 6) {
+        document.querySelector('.feedback').style.display = 'flex'
+        e.target.value = '';
+    } else {
+        if (name === inputResp) {
+            console.log('Correto!')
+            e.target.classList.add('lock')
+            document.querySelector('#foco_1').className = 'divImg foco pulse'
+        }
     }
+}
+
+function checkDevice(element) {
+    element.style.cssText = 'display: none;'
+
+    element.nextElementSibling.classList.add('lock')
+    element.nextElementSibling.style.cssText = 'display: block;'
+
+    setTimeout(() => { nextCard(); }, 500);
+}
+
+function closeFeedBack(element) {
+    element.parentElement.style.cssText = 'display: none;'
 }
 
 function closeBalao(e) {
@@ -54,5 +87,5 @@ function closeBalao(e) {
     hole.parentNode.removeChild(hole)
     e.parentElement.parentElement.removeChild(e.parentElement)
 
-    destaque.classList.add('pulse')
+    if (t !== 7) destaque.classList.add('pulse');
 }

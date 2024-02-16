@@ -47,14 +47,14 @@ function onInput(index, max_length) {
     let number = user_number.value.replace(/\s/g, '');
     user_number.value = number;
 
-    let result = /^\d+$/.test(number);
+    let isNumber = /^\d+$/.test(number);
 
-    if (!result || number !== inputResp[index] && number.length == max_length) {
+    if (!isNumber || number !== inputResp[index] && number.length == max_length) {
         document.querySelector('.feedback').style.display = 'flex'
         user_number.value = '';
     } else {
         if (number === inputResp[index]) {
-            console.log('deu certo!')
+            console.log('Correto!')
             user_number.classList.add('lock')
 
             if (t == 11) {

@@ -68,8 +68,22 @@
     </section>
 
     <section class="s8">
-        <div id="foco_1" class="divImg foco pulse"></div>
-        <div id="foco_2" class="divImg foco" onclick="nextCard()"></div>
+        <div class="hole abs"></div>
+
+        <div class="balao abs">
+            <p>Preencha o campo<br> com Cleber.</p>
+            <button class="pulse2 fechar" onclick="closeBalao(this)"></button>
+        </div>
+
+        <input type="text" class="abs" maxlength="6">
+
+        <div id="foco_1" class="divImg foco lock" onclick="checkDevice(this);"></div>
+        <div id="foco_2" class="divImg foco"></div>
+
+        <div class="feedback fade_in">
+            <img src="./img/feed_neg.png" alt="">
+            <button class="fechar pulse2" onclick="closeFeedBack(this);"></button>
+        </div>
     </section>
 
     <section class="s9">
