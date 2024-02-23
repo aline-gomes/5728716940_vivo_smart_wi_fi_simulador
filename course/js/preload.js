@@ -136,6 +136,7 @@ function returnList() {
         "./screens/3/img/print_5.png",
         "./screens/3/img/print_6.png",
         "./screens/73/img/bg.png",
+        "./screens/87/img/bg.png",
         "./screens/110/img/bg.png",
     ];
 }

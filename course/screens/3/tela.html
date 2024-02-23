@@ -41,15 +41,15 @@
             <div class="balao abs">
                 <p>
                     Para personalizar o<br> dispositivo, clique nos três pontinhos localizados no canto superior direito
-                    da
-                    tela.
+                    da tela.
                 </p>
 
                 <button class="pulse2 fechar" onclick="closeBalao(this)"></button>
             </div>
         </div>
 
-        <div class="divImg foco" onclick="nextCard()"></div>
+        <div class="divImg foco" onclick="btn_screen_4_anim.pause(); gsap.to('.s5 .foco', {scale: 1}); nextCard();">
+        </div>
     </section>
 
     <section class="s6">
@@ -84,9 +84,9 @@
             </div>
         </div>
 
-        <input type="text" class="abs" maxlength="6">
+        <input type="text" class="abs">
 
-        <div id="foco_1" class="divImg foco lock" onclick="checkDevice(this);"></div>
+        <div id="foco_1" class="divImg foco lock" onclick="checkInputResp(this);"></div>
         <div id="foco_2" class="divImg foco"></div>
 
         <div class="feedback fade_in">

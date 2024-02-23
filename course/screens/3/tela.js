@@ -1,9 +1,13 @@
 //Para abrir em outro card só trocar o t
 var t = 0,
     telas = 0,
+    btn_screen_4_anim,
     inputText = document.querySelector('.s8 input')
 
 function init() {
+    subscreen !== null ? t = subscreen : subscreen = 0;
+    sco.setSupend();
+
     telas = document.querySelectorAll('section')
     telas.forEach((e, index) => {
         if (index == t)
@@ -14,12 +18,13 @@ function init() {
     inputText.addEventListener("input", onInput);
 }
 
+var mascara_balao = null
+
 function fadeInGeral(e) {
     e = e.children[0]
-    let mascara_balao = document.querySelector('.mascara_balao')
 
-    if (document.body.contains(mascara_balao)) {
-
+    if (mascara_balao !== null) {
+        mascara_balao = document.querySelector(`.${e.parentNode.className} .mascara_balao`)
         let tl = gsap.timeline({ defaults: { clearProps: true } })
         tl
             .from(mascara_balao, .8, { autoAlpha: 0 })
@@ -40,6 +45,9 @@ function nextCard() {
     telas[t].style.display = 'none'
     t++
     telas[t].style.display = 'block'
+
+    subscreen = t
+    sco.setSupend()
     fadeInGeral(telas[t])
 }
 
@@ -47,33 +55,37 @@ inputText.addEventListener("focus", e => {
     e.target.value = "";
 })
 
-var inputResp = 'Cleber';
+var isNumber, inputName;
 
 function onInput(e) {
-    let name = e.target.value.toLowerCase().replace(/^./, str => str.toUpperCase())
-    e.target.value = name;
+    inputName = e.target.value.toLowerCase().replace(/^./, str => str.toUpperCase())
+    e.target.value = inputName;
 
-    let isNumber = /^\d+$/.test(name);
+    isNumber = /^\d+$/.test(inputName);
 
-    if (isNumber || name !== inputResp && name.length == 6) {
-        document.querySelector('.feedback').style.display = 'flex'
-        e.target.value = '';
-    } else {
-        if (name === inputResp) {
-            console.log('Correto!')
-            e.target.classList.add('lock')
-            document.querySelector('#foco_1').className = 'divImg foco pulse'
-        }
+    if (inputName.length > 2) {
+        document.querySelector('#foco_1').className = 'divImg foco pulse';
     }
 }
 
-function checkDevice(element) {
-    element.style.cssText = 'display: none;'
+var inputResp = 'Cleber';
 
-    element.nextElementSibling.classList.add('lock')
-    element.nextElementSibling.style.cssText = 'display: block;'
+function checkInputResp(element) {
+    if (isNumber || inputName !== inputResp) {
+        document.querySelector('.feedback').style.display = 'flex'
+        inputText.value = '';
+    } else {
+        if (inputName === inputResp) {
+            console.log('Correto!')
+            inputText.classList.add('lock')
 
-    setTimeout(() => { nextCard(); }, 500);
+            element.style.cssText = 'display: none;'
+            element.nextElementSibling.classList.add('lock')
+            element.nextElementSibling.style.cssText = 'display: block;'
+
+            setTimeout(() => { nextCard(); }, 500);
+        }
+    }
 }
 
 function closeFeedBack(element) {
@@ -83,5 +95,11 @@ function closeFeedBack(element) {
 function closeBalao(e) {
     let destaque = e.parentNode.parentNode.nextElementSibling
     e.parentNode.parentNode.parentNode.removeChild(e.parentNode.parentNode)
-    if (t !== 7) destaque.classList.add('pulse');
+
+    if (t == 4) {
+        btn_screen_4_anim = gsap.to(destaque, { scale: 1.25, duration: 1.2, stagger: { repeat: -1 } });
+    }
+    else if (t !== 7) {
+        destaque.classList.add('pulse');
+    }
 }

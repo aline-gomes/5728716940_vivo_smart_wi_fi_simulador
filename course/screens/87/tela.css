@@ -28,13 +28,15 @@
 }
 
 input[type="text"].i0 {
-    top: 14.5%;
+    top: 13.85%;
     left: 50%;
     width: 37.4rem;
     border: none;
     padding: .2rem;
     color: #1f1f1f;
     font-size: 1.5rem;
+    touch-action: none;
+    pointer-events: none;
     font-family: 'VivoTypeBold';
     border-bottom: 0.2rem solid #cbcbcb;
 }

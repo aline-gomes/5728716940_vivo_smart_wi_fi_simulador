@@ -8,7 +8,7 @@ function init() {
 
   // balloon events
   let showDestaque = _ => {
-    destaque.classList.add('pulse')
+    destaque.className = 'divImg foco pulse'
   }
 
   let handleCloseBalloon = (e) => {

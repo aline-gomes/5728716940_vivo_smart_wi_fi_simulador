@@ -4,26 +4,18 @@ function init() {
   let balao = document.querySelector(".balao.b0");
   let btFecharBalao = document.querySelector(".balao button.fechar");
 
-  let destaque = document.querySelector(".foco");
-
-  // balloon events
-  let showDestaque = _ => {
-    destaque.classList.add('pulse')
-  }
-
   let handleCloseBalloon = (e) => {
     e.target.parentNode.style.display = "none";
     mascara.style.display = "none";
 
-    showDestaque();
+    handleAvancar();
   }
   btFecharBalao.addEventListener("click", handleCloseBalloon);
 
   // destaque events
-  let handleAvancar = (e) => {
-    screen.next();
+  let handleAvancar = _ => {
+    setTimeout(() => { screen.next(); }, 1000);
   }
-  destaque.addEventListener("click", handleAvancar);
 
   // Animation
   let tl = new gsap.timeline();

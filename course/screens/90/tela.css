@@ -19,6 +19,11 @@
     height: 24%;
 }
 
+.foco.lock {
+    touch-action: none;
+    pointer-events: none;
+}
+
 .foco {
     top: 76%;
     width: 44rem;

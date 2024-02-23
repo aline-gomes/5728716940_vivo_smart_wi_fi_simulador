@@ -152,18 +152,32 @@
 }
 
 .s21 {
+    background-image: url(img/print_19.png);
+}
+
+.s21 .hole {
+    width: unset;
+    height: unset;
+}
+
+.s22 {
     background-image: url(img/print_18.png);
 }
 
-.s21 .foco {
+.s22 .foco {
     top: 43%;
     left: 50.3%;
+    cursor: default;
     width: 12.6rem;
     height: 12.6rem;
     background-image: url(../../img/btn_print_roteador.png);
 }
 
-.s22 {
-    filter: brightness(0.5);
-    background-image: url(img/print_19.png);
+.s22 img {
+    bottom: 11%;
+    left: 84%;
+    width: 7rem;
+    height: auto;
+    z-index: 3;
+    cursor: pointer;
 }

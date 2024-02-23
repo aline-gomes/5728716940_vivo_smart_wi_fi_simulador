@@ -3,6 +3,9 @@ var t = 0,
     telas = 0
 
 function init() {
+    subscreen !== null ? t = subscreen : subscreen = 0;
+    sco.setSupend();
+
     telas = document.querySelectorAll('section')
     telas.forEach((e, index) => {
         if (index == t)
@@ -11,12 +14,13 @@ function init() {
     })
 }
 
+var mascara_balao = null
+
 function fadeInGeral(e) {
     e = e.children[0]
-    let mascara_balao = document.querySelector('.mascara_balao')
 
-    if (document.body.contains(mascara_balao)) {
-
+    if (mascara_balao !== null) {
+        mascara_balao = document.querySelector(`.${e.parentNode.className} .mascara_balao`)
         let tl = gsap.timeline({ defaults: { clearProps: true } })
         tl
             .from(mascara_balao, .8, { autoAlpha: 0 })
@@ -38,6 +42,9 @@ function nextCard() {
     telas[t].style.display = 'none'
     t++
     telas[t].style.display = 'block'
+
+    subscreen = t
+    sco.setSupend()
     fadeInGeral(telas[t])
 }
 

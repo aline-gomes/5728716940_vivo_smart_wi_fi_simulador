@@ -21,7 +21,7 @@ function init() {
 
   // destaque events
   let handleAvancar = (e) => {
-    screen.next();
+    screen.goto(90);
   }
   destaque.addEventListener("click", handleAvancar);
 

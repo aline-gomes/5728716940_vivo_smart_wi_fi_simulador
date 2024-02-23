@@ -11,6 +11,8 @@
     top: 58.5%;
     width: 42rem;
     height: 71rem;
+    touch-action: none;
+    pointer-events: none;
     background-image: url(../../img/btn_dispositivos_todos.png);
 }
 

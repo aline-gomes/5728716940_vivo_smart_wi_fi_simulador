@@ -4,10 +4,11 @@ function init() {
   let btnArrow = document.querySelector("#btn_arrow");
 
   // balloon events
-  let showAvancar = (e) => {
-    destaque.classList.remove('pulse')
+  let showAvancar = () => {
     gsap.to(btnArrow, .8, { display: "block", opacity: 1 });
   }
+
+  setTimeout(() => { showAvancar(); }, 3000);
   destaque.addEventListener("click", showAvancar);
 
   // Animation

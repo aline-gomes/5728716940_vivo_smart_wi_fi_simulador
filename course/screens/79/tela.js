@@ -1,6 +1,6 @@
 function init() {
 
-  let validString = ["Estudo", "estudo"];
+  let validString = "estudo";
   let currDestaque = 0;
 
   // refers
@@ -27,7 +27,7 @@ function init() {
 
   // on typing...
   inputField.addEventListener("input", e => {
-    if (e.target.value.length >= validString[0].length) {
+    if (e.target.value.length >= 3) {
       // enable pulse for avatar sel.
       destaques[0].className = "divImg foco f0 pulse"
       destaques[0].style.cssText = 'touch-action: unset; pointer-events: unset;'
@@ -49,8 +49,9 @@ function init() {
 
   // validate string, return bool
   let checkInput = (inp) => {
-    if (inp.value === validString[0] ||
-      inp.value === validString[1]) {
+    inp = inp.value.toLowerCase();
+
+    if (inp === validString) {
       return true;
     } else {
       return false;
@@ -63,6 +64,7 @@ function init() {
       if (currDestaque === (destaques.length)) {
         modulos.end(79)
       } else {
+        inputField.classList.add('lock')
         destaques[currDestaque - 1].classList.remove('pulse')
         destaques[currDestaque - 1].style.cssText = 'touch-action: none; pointer-events: none;'
 

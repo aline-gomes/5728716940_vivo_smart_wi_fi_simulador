@@ -8,6 +8,7 @@ function init() {
 
 function configModulos() {
     let btns = document.querySelectorAll('.container_btns')
+
     //primeira vez
     if (modulos.t_fin.length == 0) {
         btns[0].children[0].onclick = () => {

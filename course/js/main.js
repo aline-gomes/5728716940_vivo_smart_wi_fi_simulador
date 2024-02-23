@@ -2,6 +2,8 @@
 var n_telas = 1;
 var c_screen = 0;
 
+var subscreen = null;
+var inputCapacitacao = [];
 const container = $("#loaded_content");
 
 async function init() {
@@ -21,6 +23,7 @@ var screen = {
   lock: false,
   goto: (n = c_screen) => {
     console.log("Goto > ", n)
+    sco.setSupend();
     cleanStyles();
 
     n != c_screen ? (c_screen = n) : null;
@@ -85,7 +88,6 @@ const sco = {
     lms.SCORM.set('cmi.core.score.raw', '100');
     lms.SCORM.set('cmi.core.lesson_status', 'completed');
     lms.SCORM.save();
-    lms.SCORM.quit();
   },
 
   getSuspend: function () {
@@ -95,9 +97,15 @@ const sco = {
     try {
       let susp = lms.SCORM.get("cmi.suspend_data");
       log("Get Suspend_Data: " + [susp]);
+
       if (susp != "" && susp != null) {
-        modulos.t_fin = susp.split(',').map(Number)
-        console.log("Data set => \n", [modulos.t_fin])
+        susp = susp.split(";");
+        modulos.t_fin = susp[0].split(',').filter(element => element !== '').map(Number)
+        c_screen = parseInt(susp[1]);
+        subscreen = JSON.parse(susp[2]);
+        modulos.finish = JSON.parse(susp[3]);
+
+        console.log("Data set => \n", susp)
       } else {
         log("No data available");
       }
@@ -108,8 +116,10 @@ const sco = {
     if (!sco.isLMS) {
       return;
     }
-    log("Set Suspend_Data: " + [modulos.t_fin]);
-    lms.SCORM.set("cmi.suspend_data", modulos.t_fin.toString());
+
+    let infoSusp = modulos.t_fin.toString() + ';' + c_screen + ';' + subscreen + ';' + modulos.finish;
+    log("Set Suspend_Data: " + infoSusp);
+    lms.SCORM.set("cmi.suspend_data", infoSusp);
     lms.SCORM.save();
   },
 
@@ -117,7 +127,7 @@ const sco = {
     if (!sco.isLMS) {
       return;
     }
-    let x = parseInt((modulos.t_fin / modulos.t_ini) * 100)
+    let x = parseInt((modulos.t_fin.length / modulos.t_ini.length) * 100)
     log("Set score.raw: " + x);
     lms.SCORM.set('cmi.core.score.raw', x.toString());
     lms.SCORM.save();
@@ -144,7 +154,7 @@ function fireClick(node) {
 // Menu control
 var modulos = {
   finish: false,
-  t_ini: [2, 3, 4, 5, 57, 64, 68, 81, 113, 114, 115, 116],
+  t_ini: [2, 3, 4, 5, 56, 64, 68, 81, 113, 114, 115, 116],
   t_fin: [],
   end: (n) => {
     if (modulos.t_fin.indexOf(n) != -1) {
@@ -153,7 +163,8 @@ var modulos = {
     }
 
     modulos.t_fin.push(n)
-    sco.setSupend()
+    subscreen = null
+    sco.setSupend();
     sco.setRaw()
 
     if (n == 116) {

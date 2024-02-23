@@ -1,11 +1,14 @@
 //Para abrir em outro card só trocar o t
 var t = 0, telas = 0
-var hole = document.querySelector('.hole');
 var elements = document.querySelectorAll('.anim');
 var user_number = document.querySelector(".user_number");
-var mascara_balao = document.querySelector(".mascara_balao");
+var hole = document.querySelector('#mascara_balao_geral .hole');
+var mascara_balao = document.querySelector("#mascara_balao_geral");
 
 function init() {
+    subscreen !== null ? t = subscreen : subscreen = 0;
+    sco.setSupend();
+
     Anim();
     user_number.style.display = 'none'
     telas = document.querySelectorAll('section')
@@ -14,6 +17,8 @@ function init() {
             return
         e.style.display = 'none'
     })
+
+    showInputsAndTimeoutScreens();
 }
 
 function nextCard() {
@@ -27,14 +32,11 @@ function nextCard() {
     t++
     telas[t].style.display = 'block'
 
+    subscreen = t
+    sco.setSupend()
     gsap.from(telas[t], .5, { autoAlpha: 0, onComplete: function () { gsap.set(telas[t], { clearProps: true }); } });
 
-    if (t == 1 || t == 7 || t == 16 || t == 19) {
-        setTimeout(() => { nextCard(); }, 3000);
-        return;
-    }
-
-    if (t == 8 || t == 11 || t == 13) showInputs();
+    showInputsAndTimeoutScreens();
 }
 
 user_number.addEventListener("focus", e => {
@@ -71,7 +73,7 @@ function onInput(index, max_length) {
 }
 
 var showInputs = _ => {
-    let pop_text = document.querySelector('.balao p');
+    let pop_text = document.querySelector('#mascara_balao_geral .balao p');
 
     user_number.value = 'Número';
     user_number.className = 'user_number abs lock'
@@ -113,18 +115,19 @@ function closeFeedBack(element) {
     element.parentElement.style.cssText = 'display: none;'
 }
 
-function openLastMask() {
-    mascara_balao.style.display = 'block'
-
-    hole.style.display = 'none'
-    document.querySelector('.balao p').innerHTML = '<strong>Pronto!</strong><br> Você está na tela inicial do App Vivo Smart Wi-Fi.'
-
-    document.querySelector('.balao .fechar').onclick = _ => { nextCard(); };
-}
-
 function closeBalao(element) {
     if (t == 8 || t == 11 || t == 13) user_number.classList.remove('lock');
     element.parentElement.parentElement.style.cssText = 'display: none;'
+}
+
+function showInputsAndTimeoutScreens() {
+    if (t == 1 || t == 7 || t == 16 || t == 19) {
+        setTimeout(() => { nextCard(); }, 3000);
+    }
+
+    else if (t == 8 || t == 11 || t == 13) {
+        showInputs();
+    }
 }
 
 // ANIMATION

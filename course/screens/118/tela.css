@@ -9,5 +9,43 @@
     height: 100%;
     overflow: hidden;
     color: white;
-    background-image: url(img/img01.png);
+    background-image: url(../../img/bg_portrait.png);
+}
+
+img {
+    width: 45%;
+    height: auto;
+    filter: drop-shadow(-4rem 2rem 6rem rgba(0, 0, 0, .5));
+}
+
+.p1 {
+    width: 95%;
+    font-size: 5rem;
+    text-align: center;
+    font-family: 'VivoTypeBold';
+}
+
+.p2 {
+    width: 85%;
+    font-size: 3.2rem;
+    text-align: center;
+    font-family: 'VivoTypeLight';
+}
+
+#btn_finish {
+    width: 24rem;
+    height: 7rem;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    font-size: 3.5rem;
+    text-align: center;
+    color: var(--white);
+    border-radius: 5rem;
+    letter-spacing: .1rem;
+    padding-bottom: 0.4rem;
+    text-transform: uppercase;
+    background-image: url(img/btn_bg.png);
+    box-shadow: 0 0 0 0 rgb(222 88 151);
+    font-family: VivoTypeBold, Arial, Helvetica, sans-serif;
 }

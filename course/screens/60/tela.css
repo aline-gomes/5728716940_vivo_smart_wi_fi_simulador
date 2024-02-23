@@ -8,18 +8,21 @@
 }
 
 .balao.b0 {
-    width: 50%;
+    width: 60%;
 }
 
 .hole {
-    top: 91.35%;
-    left: 50.05%;
-    width: 78%;
-    height: 7.2%;
+    top: 12%;
+    left: 43.82%;
+    width: 36%;
+    height: 3%;
 }
 
 .foco {
-    top: 91.4%;
-    width: 36.5rem;
-    background-image: url(../../img/btn_print_pausar_conexao.png);
+    top: 12%;
+    left: 43.9%;
+    width: 16.5rem;
+    height: 3rem;
+    cursor: default;
+    background-image: url(../../img/btn_print_conexao_pausada.png);
 }

@@ -109,6 +109,7 @@
     top: 48%;
     width: 42rem;
     height: 20rem;
+    cursor: default;
     background-image: url(img/btn_print_endereco.png);
 }
 
@@ -167,6 +168,7 @@
     left: 49.8%;
     width: 18rem;
     height: 14.3rem;
+    cursor: default;
     background-image: url(img/btn_print_vivo.png);
 }
 

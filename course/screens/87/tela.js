@@ -10,10 +10,13 @@ function init() {
 
   let destaque = document.querySelector(".foco");
 
+  let inputName = document.querySelector("input.nome.i0");
   let inputField = document.querySelector("input.nome.i1");
 
   let feedNeg = document.querySelector(".feedback");
   let btFecharFeed = document.querySelector(".feedback button.fechar");
+
+  inputCapacitacao.length <= 0 ? inputName.value = 'CAPACITACAO' : inputName.value = inputCapacitacao[0];
 
   // on first focus...
   inputField.addEventListener("focus", e => {
@@ -55,7 +58,7 @@ function init() {
         console.log('deu certo')
 
         document.querySelector('.foco').style.cssText = 'cursor: pointer; touch-action: unset; pointer-events: unset;'
-        document.querySelector('.foco').onclick = _ => { screen.next(); };
+        document.querySelector('.foco').onclick = _ => { inputCapacitacao = []; screen.next(); };
       } else {
         // Incorrect feedback! Show feed =>
         feedNeg.style.display = "flex";

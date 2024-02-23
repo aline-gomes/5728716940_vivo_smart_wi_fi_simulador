@@ -51,6 +51,8 @@
   top: 50%;
   width: 41em;
   height: 53em;
+  touch-action: none;
+  pointer-events: none;
   background-image: url(img/btn_print_repetidor.png);
 }
 

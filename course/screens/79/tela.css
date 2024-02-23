@@ -54,6 +54,11 @@
     background-image: url(img/btn_print_salvar.png);
 }
 
+input[type="text"].lock {
+    touch-action: none;
+    pointer-events: none;
+}
+
 input[type="text"] {
     top: 21.5%;
     left: 50%;

@@ -8,20 +8,19 @@
 }
 
 .balao.b0 {
-    width: 50%;
+    width: 60%;
 }
 
 .hole {
-    top: 81.2%;
-    left: 13.5%;
-    width: 15%;
-    height: 10%;
+    left: 50%;
+    top: 22.5%;
+    width: 88%;
+    height: 8%;
 }
 
 .foco {
-    top: 79.8%;
-    left: 13.2%;
-    width: 5.4rem;
-    height: 5rem;
-    background-image: url(../../img/btn_print_icone_todos.png);
+    top: 22.7%;
+    width: 42rem;
+    height: 6.8rem;
+    background-image: url(../../img/btn_print_cleber_2.png);
 }

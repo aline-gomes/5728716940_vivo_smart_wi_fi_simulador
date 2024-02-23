@@ -1,6 +1,6 @@
 function init() {
 
-  let validString = ["CAPACITACAO", "capacitacao"];
+  let validString = "CAPACITACAO";
   let currDestaque = 0;
 
   // refers
@@ -35,8 +35,9 @@ function init() {
 
   // validate string, return bool
   let checkInput = (inp) => {
-    if (inp.value === validString[0] ||
-      inp.value === validString[1]) {
+    inp = inp.value.toUpperCase();
+
+    if (inp === validString) {
       return true;
     } else {
       return false;
@@ -45,16 +46,14 @@ function init() {
 
   // on typing...
   inputField.addEventListener("input", e => {
-    if (e.target.value.length >= validString[0].length) {
+    if (e.target.value.length >= validString.length) {
       // enable pulse for avatar sel.
       if (checkInput(inputField)) {
-        document.querySelector('.nome.i1').classList.add('pulse')
-
-        console.log('deu certo')
-
-        document.querySelector('.nome.i1').style.cssText = 'cursor: pointer; touch-action: unset; pointer-events: unset;'
-        document.querySelector('.nome.i1').onclick = _ => { screen.next(); };
-      } else {
+        console.log('Correto!')
+        inputCapacitacao.push(e.target.value)
+        setTimeout(() => { screen.next(); }, 500);
+      }
+      else {
         // Incorrect feedback! Show feed =>
         feedNeg.style.display = "flex";
       }
